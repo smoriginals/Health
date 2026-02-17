@@ -1,4 +1,3 @@
-
 import Navbar from './Components/Navbar'
 import Herobar from './Components/Herobar'
 import Quotes from './Pages/Quotes'
@@ -17,6 +16,10 @@ import LatestArticles from './Pages/LatestArticles'
 import LatestVideos from './Pages/LatestVideos'
 import Booking from './Pages/Booking'
 import Locations from './Pages/Locations'
+import Faq from './Pages/Faq'
+import Footer from './Pages/footer'
+import MobileFooter from './Components/MobileFooter'
+
 export default function App() {
 
     return (
@@ -33,13 +36,17 @@ export default function App() {
             <HealthQuestions />
             <Help />
             <Reviews />
-            <PatientsStories/>
+            <PatientsStories />
             <HexaNews />
             <LatestArticles />
             <LatestVideos />
             <Booking />
             <Locations />
-
+            <Faq />
+            <Help />
+            <Footer />
+            <MobileFooter />
+            
         </>
     )
 }

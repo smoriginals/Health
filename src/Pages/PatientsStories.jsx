@@ -1,163 +1,155 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from "react";
+
+// 👇 Replace these with your actual video thumbnail imports
+const THUMB_1 = "https://randomuser.me/api/portraits/men/41.jpg";
+const THUMB_2 = "https://randomuser.me/api/portraits/women/44.jpg";
+const THUMB_3 = "https://randomuser.me/api/portraits/men/32.jpg";
+
+const testimonials = [
+    {
+        id: 1,
+        name: "Rajesh Sharma",
+        videoTag: "SURGERY FOR PILES",
+        videoSubtext: "IT WAS A SEEMLESS PROCESS OF HEXAHEALTH",
+        hasVideo: true,
+        thumb: THUMB_1,
+        story: "I got connected with HexaHealth and they did everything on my behalf. Even when I got admitted to the hospital, they were there for me like my brother.",
+        fullStory: "I got connected with HexaHealth and they did everything on my behalf. Even when I got admitted to the hospital, they were there for me like my brother, and I did not need anybody else do things for me. It was a very seamless process which HexaHealth have done for me.",
+    },
+    {
+        id: 2,
+        name: "Anupama",
+        videoTag: "SURGERY FOR FISSURE",
+        videoSubtext: "HEXAHEALTH AAPKO FREEDOM DETA HAI KHUDSE DOCTOR CHOOSE KARNE KA",
+        hasVideo: true,
+        thumb: THUMB_2,
+        story: "Baaki jagah par last minute complications hote hain. Lekin, mujhe laga ki iske baad aur koi problem ya pain bhi kam hoga...",
+        fullStory: "Baaki jagah par last minute complications hote hain. Lekin, mujhe laga ki iske baad aur koi aur problem ya pain bhi kam hoga. Maine socha ye bahut achi company hai. HexaHealth ne mujhe complete freedom di doctor choose karne ki aur hospital choose karne ki.",
+    },
+    {
+        id: 3,
+        name: "Siddhant",
+        hasVideo: false,
+        story: "Mujhe HexaHealth ke baare mein online pata chala. HexaHealth ne ek Plastic Surgeon se connect karvaya. It was very good aur main suggest karunga...",
+        fullStory: "Mujhe HexaHealth ke baare mein online pata chala. HexaHealth ne ek Plastic Surgeon, Dr. Priyanka Sharma, se connect karvaya. It was very good aur main suggest karunga agar aap log bhi Surgery kara rahe ho toh HexaHealth ke through hi karao. Main toh kaafi khush hun.",
+    },
+    {
+        id: 4,
+        name: "Madhu",
+        videoTag: "SURGERY FOR HERNIA",
+        videoSubtext: "HEXAHEALTH BAHUT HELPFUL HAI",
+        hasVideo: true,
+        thumb: THUMB_3,
+        story: "Karib 2-3 saal se Hernia se pareshaan thi. HexaHealth kaafi helpful hai aur apne budget ke andar bhi hai.",
+        fullStory: "Karib 2-3 saal se Hernia se pareshaan thi. Kisi relative ne mujhe HexaHealth ke baare mein bataya aur main online appointment book kari. Agar koi bhi aage kisi ko dikkat aati hai toh main unhe HexaHealth ke baare mein bataungi. HexaHealth kaafi helpful hai aur apne budget ke andar bhi hai.",
+    },
+];
 
 export default function PatientsStories() {
-  const [expandedStory, setExpandedStory] = useState(null);
+    const [expanded, setExpanded] = useState(null);
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Rajesh Sharma",
-      videoTag: "SURGERY FOR PILES",
-      videoSubtext: "IT WAS A SEEMLESSS PROCESS OF HEXAHEALTH 🎵",
-      hasVideo: true,
-      story: "I got connected with HexaHealth and they did everything on my behalf. Even when I got admitted to the hospital, they were there for me like my brother, and I did not need anybody else do things for me. It was a very seamless process which HexaHealth have done for me.",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      id: 2,
-      name: "Anupama",
-      videoTag: "SURGERY FOR FISSURE",
-      videoSubtext: "# HEXAHEALTH AAPKO FREEDOM DETA HAI KHUDSE DOCTOR CHOOSE KARNE KA 🎵",
-      hasVideo: true,
-      story: "Baaki jagah par last minute complications hote hain. Lekin, mujhe laga ki iske baad aur koi aur problem ya pain bhi kam hoga. Maine socha ye bahut achi company hai, humne HexaHealth ke saath tie-up kiya hai. Ye bahut achi baat jo mujhe lagi...",
-      fullStory: "Baaki jagah par last minute complications hote hain. Lekin, mujhe laga ki iske baad aur koi aur problem ya pain bhi kam hoga. Maine socha ye bahut achi company hai, humne HexaHealth ke saath tie-up kiya hai. Ye bahut achi baat jo mujhe lagi. HexaHealth ne mujhe complete freedom di doctor choose karne ki aur hospital choose karne ki.",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      id: 3,
-      name: "Siddhant",
-      videoTag: null,
-      hasVideo: false,
-      story: "Mujhe HexaHealth ke baare mein online pata chala. HexaHealth ne ek Plastic Surgeon, Dr. Priyanka Sharma, se connect karvaya. It was very good aur main suggest karunga agar aap log bhi Surgery kara rahe ho toh HexaHealth ke through hi karao. Main toh kaafi khush hun...",
-      fullStory: "Mujhe HexaHealth ke baare mein online pata chala. HexaHealth ne ek Plastic Surgeon, Dr. Priyanka Sharma, se connect karvaya. It was very good aur main suggest karunga agar aap log bhi Surgery kara rahe ho toh HexaHealth ke through hi karao. Main toh kaafi khush hun. HexaHealth ki team ne har step pe guidance di aur process ko bahut simple bana diya.",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      id: 4,
-      name: "Madhu",
-      videoTag: "SURGERY FOR HERNIA",
-      videoSubtext: "# HEXAHEALTH BAHUT HELPFUL HAI 🎵",
-      hasVideo: true,
-      story: "Karib 2-3 saal se Hernia se pareshaan thi. Kisi relative ne mujhe HexaHealth ke baare mein bataya aur main online appointment book kari. Agar koi bhi aage kisi ko dikkat aati hai toh main unhe HexaHealth ke baare mein bataungi. HexaHealth kaafi helpful hai aur apne budget ke andar bhi hai.",
-      image: "/api/placeholder/400/300"
-    }
-  ];
+    return (
+        <div className="relative top-0 bg-gradient-to-b from-blue-50 to-white px-4 py-16">
+            <div className="mx-auto max-w-7xl">
 
-  const toggleStory = (id) => {
-    setExpandedStory(expandedStory === id ? null : id);
-  };
-
-  return (
-    <div className="w-full bg-gradient-to-b from-blue-50 to-white py-16 px-4">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-teal-900 mb-4">
-            Real Patients, Real Stories
-          </h2>
-          <p className="text-lg text-gray-700 max-w-4xl">
-            Experience how HexaHealth transformed treatment journeys with trust, and care into successful recovery stories.
-          </p>
-        </div>
-
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-6 relative">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.id}
-              className={`${
-                testimonial.hasVideo ? 'flex gap-6' : 'bg-white'
-              } ${!testimonial.hasVideo ? 'rounded-2xl p-6 shadow-md border border-gray-100' : ''}`}
-            >
-              {/* Video Card */}
-              {testimonial.hasVideo && (
-                <div className="flex-shrink-0 w-72 relative group cursor-pointer">
-                  <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                    {/* Video Thumbnail */}
-                    <div className="bg-gradient-to-br from-teal-900 to-teal-700 aspect-[9/12] relative">
-                      {/* Simulated video thumbnail - replace with actual image */}
-                      <div className="absolute inset-0 bg-black/20"></div>
-                      
-                      {/* HexaHealth Logo */}
-                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1.5 flex items-center gap-2">
-                        <div className="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center">
-                          <span className="text-white text-xs font-bold">H</span>
-                        </div>
-                        <span className="text-sm font-semibold text-gray-800">HexaHealth</span>
-                      </div>
-
-                      {/* Video Tag */}
-                      {testimonial.videoTag && (
-                        <div className="absolute top-16 left-4 bg-orange-500 text-white px-3 py-1.5 rounded-lg text-xs font-bold">
-                          {testimonial.videoTag}
-                        </div>
-                      )}
-
-                      {/* Video Subtext */}
-                      {testimonial.videoSubtext && (
-                        <div className="absolute bottom-20 left-4 right-4">
-                          <p className="text-white text-sm font-semibold leading-tight">
-                            {testimonial.videoSubtext}
-                          </p>
-                        </div>
-                      )}
-
-                      {/* Play Button */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
-                          <svg className="w-8 h-8 text-teal-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
-                        </div>
-                      </div>
-
-                      {/* Patient Name */}
-                      <div className="absolute bottom-4 right-4 text-white font-bold text-lg">
-                        {testimonial.name}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Text Content */}
-              <div className={`flex-1 ${testimonial.hasVideo ? 'bg-white rounded-2xl p-6 shadow-md border border-gray-100' : ''}`}>
-                <h3 className="text-2xl font-bold text-teal-900 mb-4">
-                  {testimonial.name}
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  {expandedStory === testimonial.id && testimonial.fullStory
-                    ? testimonial.fullStory
-                    : testimonial.story}
+                {/* Header */}
+                <h2 className="mb-3 text-2xl font-bold text-blue-900 sm:text-3xl">
+                    Real Patients, Real Stories
+                </h2>
+                <p className="mb-10 max-w-2xl text-sm text-gray-600">
+                    Experience how HexaHealth transformed treatment journeys with trust, and care into successful recovery stories.
                 </p>
-                {testimonial.fullStory && (
-                  <button
-                    onClick={() => toggleStory(testimonial.id)}
-                    className="text-teal-600 font-semibold hover:text-teal-700 transition-colors inline-flex items-center gap-1"
-                  >
-                    {expandedStory === testimonial.id ? '...Read Less' : '...Read More'}
-                  </button>
-                )}
-              </div>
+
+                {/* Scrollable row */}
+                <div
+                    className="flex gap-5 overflow-x-auto pb-4"
+                    style={{ scrollbarWidth: "none" }}
+                >
+                    {testimonials.map((t) => (
+                        <div
+                            key={t.id}
+                            className="flex w-[80vw] flex-shrink-0 flex-col gap-4 sm:w-[500px] sm:flex-row"
+                        >
+                            {/* Video thumbnail */}
+                            {t.hasVideo && (
+                                <div className="group relative w-full flex-shrink-0 cursor-pointer overflow-hidden rounded-2xl shadow-lg sm:w-48">
+                                    {/* Thumbnail image — replace with real video thumb */}
+                                    <img
+                                        src={t.thumb}
+                                        alt={t.name}
+                                        className="h-full min-h-[200px] w-full object-cover sm:min-h-0"
+                                    />
+                                    {/* Dark overlay */}
+                                    <div className="absolute inset-0 bg-black/40" />
+
+                                    {/* HexaHealth badge */}
+                                    <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-lg bg-white/90 px-2 py-1">
+                                        <div className="flex h-5 w-5 items-center justify-center rounded-full bg-teal-600">
+                                            <span className="font-bold text-[10px] text-white">H</span>
+                                        </div>
+                                        <span className="text-xs font-semibold text-gray-800">HexaHealth</span>
+                                    </div>
+
+                                    {/* Surgery tag */}
+                                    {t.videoTag && (
+                                        <div className="absolute left-3 top-11 rounded-md bg-orange-500 px-2 py-1 font-bold text-[10px] text-white">
+                                            {t.videoTag}
+                                        </div>
+                                    )}
+
+                                    {/* Subtext */}
+                                    {t.videoSubtext && (
+                                        <p className="absolute bottom-10 left-3 right-3 text-xs font-semibold leading-snug text-white">
+                                            "{t.videoSubtext}"
+                                        </p>
+                                    )}
+
+                                    {/* Play button */}
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg transition group-hover:scale-110">
+                                            <svg className="ml-1 h-5 w-5 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    {/* Patient name */}
+                                    <p className="absolute bottom-3 right-3 text-sm font-bold text-white">
+                                        {t.name}
+                                    </p>
+                                </div>
+                            )}
+
+                            {/* Text card */}
+                            <div className="flex flex-1 flex-col justify-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
+                                <h3 className="mb-2 text-lg font-bold text-blue-900">{t.name}</h3>
+                                <p className="mb-3 text-sm leading-relaxed text-gray-600">
+                                    {expanded === t.id && t.fullStory ? t.fullStory : t.story}
+                                </p>
+                                {t.fullStory && (
+                                    <button
+                                        onClick={() => setExpanded(expanded === t.id ? null : t.id)}
+                                        className="text-left text-xs font-semibold text-teal-600 hover:text-teal-700"
+                                    >
+                                        {expanded === t.id ? "...Read Less" : "...Read More"}
+                                    </button>
+                                )}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* View All */}
+                <div className="mt-10 text-center">
+                    <button className="inline-flex items-center gap-2 rounded-full bg-teal-600 px-7 py-3 text-sm font-semibold text-white transition hover:bg-teal-700 hover:shadow-lg">
+                        View All Success Stories
+                        <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
             </div>
-          ))}
-
-          {/* Floating Robot Icon */}
-          <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-gradient-to-br from-purple-200 to-blue-200 rounded-full flex items-center justify-center shadow-xl z-10 animate-bounce">
-            <div className="text-4xl">🤖</div>
-          </div>
         </div>
-
-        {/* View All Button */}
-        <div className="mt-12 text-center">
-          <button className="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 hover:shadow-lg hover:scale-105 inline-flex items-center gap-2">
-            View All Success Stories
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+    );
 }

@@ -1,191 +1,139 @@
-﻿import React, { useRef } from "react";
+﻿import React from "react";
+import { BadgeCheck } from "lucide-react";
+
+const reviews = [
+    {
+        name: "Riya Sharma",
+        verified: true,
+        daysAgo: 2,
+        rating: 5,
+        img: "https://randomuser.me/api/portraits/women/44.jpg",
+        text: "The health insights are incredibly detailed and easy to understand.",
+    },
+    {
+        name: "Amit Verma",
+        verified: false,
+        daysAgo: 6,
+        rating: 4,
+        img: "https://randomuser.me/api/portraits/men/32.jpg",
+        text: "Reports generate quickly and navigation is simple.",
+    },
+    {
+        name: "Neha Kapoor",
+        verified: true,
+        daysAgo: 1,
+        rating: 5,
+        img: "https://randomuser.me/api/portraits/women/55.jpg",
+        text: "Modern UI and smooth performance.",
+    },
+    {
+        name: "Raj Singh",
+        verified: true,
+        daysAgo: 3,
+        rating: 4,
+        img: "https://randomuser.me/api/portraits/men/60.jpg",
+        text: "Great daily tracking tool.",
+    },
+    {
+        name: "Riya Sharma",
+        verified: true,
+        daysAgo: 2,
+        rating: 5,
+        img: "https://randomuser.me/api/portraits/women/44.jpg",
+        text: "The health insights are incredibly detailed and easy to understand.",
+    },
+    {
+        name: "Amit Verma",
+        verified: false,
+        daysAgo: 6,
+        rating: 4,
+        img: "https://randomuser.me/api/portraits/men/32.jpg",
+        text: "Reports generate quickly and navigation is simple.",
+    },
+    {
+        name: "Neha Kapoor",
+        verified: true,
+        daysAgo: 1,
+        rating: 5,
+        img: "https://randomuser.me/api/portraits/women/55.jpg",
+        text: "Modern UI and smooth performance.",
+    },
+    {
+        name: "Raj Singh",
+        verified: true,
+        daysAgo: 3,
+        rating: 4,
+        img: "https://randomuser.me/api/portraits/men/60.jpg",
+        text: "Great daily tracking tool.",
+    },
+];
 
 export default function Reviews() {
-    const sliderRef = useRef(null);
-
-    const drag = useRef({
-        isDown: false,
-        startX: 0,
-        scrollLeft: 0,
-    });
-
-    const reviews = [
-        {
-            name: "Riya Sharma",
-            verified: true,
-            daysAgo: 2,
-            rating: 5,
-            img: "https://randomuser.me/api/portraits/women/44.jpg",
-            text: "The health insights are incredibly detailed and easy to understand.",
-        },
-        {
-            name: "Amit Verma",
-            verified: false,
-            daysAgo: 6,
-            rating: 4,
-            img: "https://randomuser.me/api/portraits/men/32.jpg",
-            text: "Reports generate quickly and navigation is simple.",
-        },
-        {
-            name: "Neha Kapoor",
-            verified: true,
-            daysAgo: 1,
-            rating: 5,
-            img: "https://randomuser.me/api/portraits/women/55.jpg",
-            text: "Modern UI and smooth performance.",
-        },
-        {
-            name: "Raj Singh",
-            verified: true,
-            daysAgo: 3,
-            rating: 4,
-            img: "https://randomuser.me/api/portraits/men/60.jpg",
-            text: "Great daily tracking tool.",
-        },
-        {
-            name: "Riya Sharma",
-            verified: true,
-            daysAgo: 2,
-            rating: 5,
-            img: "https://randomuser.me/api/portraits/women/44.jpg",
-            text: "The health insights are incredibly detailed and easy to understand.",
-        },
-        {
-            name: "Amit Verma",
-            verified: false,
-            daysAgo: 6,
-            rating: 4,
-            img: "https://randomuser.me/api/portraits/men/32.jpg",
-            text: "Reports generate quickly and navigation is simple.",
-        },
-        {
-            name: "Neha Kapoor",
-            verified: true,
-            daysAgo: 1,
-            rating: 5,
-            img: "https://randomuser.me/api/portraits/women/55.jpg",
-            text: "Modern UI and smooth performance.",
-        },
-        {
-            name: "Raj Singh",
-            verified: true,
-            daysAgo: 3,
-            rating: 4,
-            img: "https://randomuser.me/api/portraits/men/60.jpg",
-            text: "Great daily tracking tool.",
-        },
-    ];
-
-    const handleMouseDown = (e) => {
-        drag.current.isDown = true;
-        sliderRef.current.classList.add("cursor-grabbing");
-
-        drag.current.startX =
-            e.pageX - sliderRef.current.offsetLeft;
-
-        drag.current.scrollLeft =
-            sliderRef.current.scrollLeft;
-    };
-
-    const handleMouseLeave = () => {
-        drag.current.isDown = false;
-        sliderRef.current.classList.remove("cursor-grabbing");
-    };
-
-    const handleMouseUp = () => {
-        drag.current.isDown = false;
-        sliderRef.current.classList.remove("cursor-grabbing");
-    };
-
-    const handleMouseMove = (e) => {
-        if (!drag.current.isDown) return;
-
-        e.preventDefault();
-
-        const x =
-            e.pageX - sliderRef.current.offsetLeft;
-
-        const walk =
-            (x - drag.current.startX) * 1.5;
-
-        sliderRef.current.scrollLeft =
-            drag.current.scrollLeft - walk;
-    };
-
     return (
-        <div className="px-8 py-6">
-            <div
-                ref={sliderRef}
-                onMouseDown={handleMouseDown}
-                onMouseLeave={handleMouseLeave}
-                onMouseUp={handleMouseUp}
-                onMouseMove={handleMouseMove}
-                className="
-          flex gap-6
-          overflow-x-auto
-          scroll-smooth
-          cursor-grab
-          select-none
-          pb-4
-        "
-            >
-                {reviews.map((r, i) => (
-                    <div
-                        key={i}
-                        className="
-              flex-shrink-0
-              w-[300px]
-              h-[300px]
-              bg-white
-              rounded-2xl
-              shadow-md
-              p-5
-              flex flex-col
-              justify-between
-            "
-                    >
-                        {/* Header */}
-                        <div className="flex justify-between">
-                            <div className="flex gap-3">
-                                <img
-                                    src={r.img}
-                                    alt={r.name}
-                                    className="w-12 h-12 rounded-full object-cover"
-                                />
+        <div className="relative top-0 bg-slate-100 px-4 py-12">
+            <div className="mx-auto max-w-7xl">
 
-                                <div>
-                                    <div className="flex items-center gap-1">
-                                        <span className="font-semibold text-sm">
-                                            {r.name}
-                                        </span>
+                {/* Header */}
+                <h2 className="mb-2 text-2xl font-bold text-blue-900 sm:text-3xl">
+                    What Our Patients Say
+                </h2>
+                <p className="mb-6 text-sm text-gray-500">
+                    Real experiences from verified HexaHealth patients
+                </p>
 
-                                        {r.verified && (
-                                            <span className="text-xs bg-blue-500 text-white px-2 rounded-full">
-                                                ✔
+                {/* Scrollable row — CSS only, no JS needed */}
+                <div
+                    className="flex gap-5 overflow-x-auto pb-4"
+                    style={{ scrollbarWidth: "none" }}
+                >
+                    {reviews.map((r, i) => (
+                        <div
+                            key={i}
+                            className="flex w-72 flex-shrink-0 flex-col justify-between rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                        >
+                            {/* Top: Avatar + Name + Stars */}
+                            <div className="mb-4 flex items-start justify-between">
+                                <div className="flex items-center gap-3">
+                                    <img
+                                        src={r.img}
+                                        alt={r.name}
+                                        className="h-11 w-11 rounded-full object-cover"
+                                    />
+                                    <div>
+                                        <div className="flex items-center gap-1">
+                                            <span className="text-sm font-semibold text-blue-900">
+                                                {r.name}
                                             </span>
-                                        )}
+                                            {r.verified && (
+                                                <BadgeCheck size={15} className="text-blue-500" />
+                                            )}
+                                        </div>
+                                        <p className="text-xs text-gray-400">{r.daysAgo} days ago</p>
                                     </div>
+                                </div>
 
-                                    <div className="text-xs text-gray-500">
-                                        {r.daysAgo} days ago
-                                    </div>
+                                {/* Stars */}
+                                <div className="flex gap-0.5">
+                                    {[...Array(5)].map((_, j) => (
+                                        <span
+                                            key={j}
+                                            className={j < r.rating ? "text-orange-400" : "text-gray-200"}
+                                        >
+                                            ★
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
 
-                            <div className="text-yellow-400 text-sm">
-                                {[...Array(5)].map((_, j) => (
-                                    <span key={j}>
-                                        {j < r.rating ? "★" : "☆"}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
+                            {/* Divider */}
+                            <div className="mb-4 h-px bg-gray-100" />
 
-                        <p className="text-gray-700 text-sm">
-                            {r.text}
-                        </p>
-                    </div>
-                ))}
+                            {/* Review text */}
+                            <p className="text-sm leading-relaxed text-gray-600">{r.text}</p>
+                        </div>
+                    ))}
+                </div>
+
             </div>
         </div>
     );

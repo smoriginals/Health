@@ -1,8 +1,7 @@
 ﻿import React, { useState } from "react";
-import { Star, Calendar } from "lucide-react";
+import { Star, Calendar, MapPin } from "lucide-react";
 
 export default function Hospitals() {
-
     const cities = [
         "Delhi", "Gurugram", "Noida", "Bangalore",
         "Mumbai", "Ahmedabad", "Pune", "Kolkata",
@@ -15,45 +14,69 @@ export default function Hospitals() {
         {
             name: "Manipal Hospital, Dwarka",
             location: "Dwarka, Delhi",
-            rating: "4.51/5",
+            rating: "4.51",
             reviews: 91,
+            badge: "JCI & NABH",
             logo: "https://via.placeholder.com/100"
         },
         {
             name: "MASSH Hospital, Nehru Place",
             location: "Nehru Place, Delhi",
-            rating: "4.5/5",
+            rating: "4.5",
             reviews: 98,
+            badge: "NABH",
             logo: "https://via.placeholder.com/100"
         },
         {
             name: "ASG Eye Hospital (Narang Eye Institute)",
             location: "Model Town, Delhi",
-            rating: "5/5",
+            rating: "5.0",
             reviews: 98,
+            badge: "NABH",
+            logo: "https://via.placeholder.com/100"
+        },
+        {
+            name: "Fortis Hospital, Shalimar Bagh",
+            location: "Shalimar Bagh, Delhi",
+            rating: "4.7",
+            reviews: 124,
+            badge: "JCI & NABH",
+            logo: "https://via.placeholder.com/100"
+        },
+        {
+            name: "Max Super Speciality Hospital",
+            location: "Saket, Delhi",
+            rating: "4.6",
+            reviews: 210,
+            badge: "JCI",
             logo: "https://via.placeholder.com/100"
         }
     ];
 
     return (
-        <section className="bg-slate-100 py-16 px-4">
-            <div className="max-w-7xl mx-auto">
+        <div className="relative top-16 mt-4 bg-slate-100 px-4 py-6">
+            <div className="mx-auto max-w-7xl">
 
                 {/* Header */}
-                <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 mb-6">
+                <h2 className="mb-2 text-2xl font-bold text-blue-900 sm:text-3xl">
                     Top JCI & NABH Accredited Hospitals
                 </h2>
+                <p className="mb-6 text-sm text-gray-500">
+                    Trusted hospitals with world-class facilities across India
+                </p>
 
                 {/* City Chips */}
-                <div className="flex flex-wrap gap-3 mb-10">
-                    {cities.map(city => (
+                <div
+                    className="mb-8 flex gap-2 overflow-x-auto pb-2"
+                    style={{ scrollbarWidth: "none" }}
+                >
+                    {cities.map((city) => (
                         <button
                             key={city}
                             onClick={() => setActiveCity(city)}
-                            className={`px-4 py-2 rounded-full border text-sm font-medium transition
-                ${activeCity === city
-                                    ? "bg-blue-100 text-blue-700 border-blue-400"
-                                    : "bg-white border-gray-300 text-gray-600 hover:bg-gray-100"
+                            className={`flex-shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-all ${activeCity === city
+                                    ? "border-blue-500 bg-blue-600 text-white"
+                                    : "border-gray-300 bg-white text-gray-600 hover:border-blue-300 hover:bg-blue-50"
                                 }`}
                         >
                             {city}
@@ -61,70 +84,73 @@ export default function Hospitals() {
                     ))}
                 </div>
 
-                {/* Cards Layout */}
-                <div className="grid lg:grid-cols-4 gap-6">
-
-                    {/* Hospital Cards */}
+                {/* Hospital Cards */}
+                <div
+                    className="flex gap-5 overflow-x-auto pb-4"
+                    style={{ scrollbarWidth: "none" }}
+                >
                     {hospitals.map((h, i) => (
                         <div
                             key={i}
-                            className="bg-white rounded-2xl border p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition"
+                            className="flex w-72 flex-shrink-0 flex-col rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
                         >
-                            <img
-                                src={h.logo}
-                                alt=""
-                                className="w-24 h-16 object-contain mb-5"
-                            />
-
-                            <div>
-                                <h3 className="font-semibold text-blue-900 mb-1">
-                                    {h.name}
-                                </h3>
-
-                                <p className="text-gray-600 text-sm mb-2">
-                                    {h.location}
-                                </p>
-
-                                {/* Rating */}
-                                <div className="flex items-center gap-2 text-sm mb-5">
-                                    <Star size={16} className="text-orange-500 fill-orange-500" />
-                                    <span className="text-blue-900 font-medium">
-                                        {h.rating}
-                                    </span>
-                                    <span className="text-gray-500">
-                                        ({h.reviews} Ratings)
-                                    </span>
-                                </div>
+                            {/* Logo + Badge */}
+                            <div className="mb-4 flex items-start justify-between">
+                                <img
+                                    src={h.logo}
+                                    alt={h.name}
+                                    className="h-14 w-20 rounded-lg border border-gray-100 object-contain p-1"
+                                />
+                                <span className="rounded-full border border-green-200 bg-green-50 px-2.5 py-1 font-bold uppercase tracking-wide text-[10px] text-green-700">
+                                    {h.badge}
+                                </span>
                             </div>
 
-                            {/* Button */}
-                            <button className="mt-auto flex items-center justify-center gap-2 border border-blue-500 text-blue-700 rounded-full py-3 hover:bg-blue-50 transition">
-                                <Calendar size={16} />
+                            {/* Name & Location */}
+                            <h3 className="mb-1 font-bold leading-snug text-blue-900">
+                                {h.name}
+                            </h3>
+                            <div className="mb-4 flex items-center gap-1 text-sm text-gray-500">
+                                <MapPin size={13} className="flex-shrink-0 text-blue-400" />
+                                {h.location}
+                            </div>
+
+                            {/* Divider */}
+                            <div className="mb-4 h-px bg-gray-100" />
+
+                            {/* Rating */}
+                            <div className="mb-5 flex items-center gap-2">
+                                <div className="flex items-center gap-1 rounded-full bg-orange-50 px-2.5 py-1">
+                                    <Star size={13} className="fill-orange-400 text-orange-400" />
+                                    <span className="text-sm font-bold text-orange-600">{h.rating}</span>
+                                </div>
+                                <span className="text-xs text-gray-400">({h.reviews} Ratings)</span>
+                            </div>
+
+                            {/* CTA */}
+                            <button className="mt-auto flex w-full items-center justify-center gap-2 rounded-full border border-blue-500 py-2.5 text-sm font-semibold text-blue-700 transition hover:bg-blue-600 hover:text-white">
+                                <Calendar size={15} />
                                 Book Appointment
                             </button>
                         </div>
                     ))}
 
-                    {/* Side Panel */}
-                    <div className="bg-blue-100 rounded-2xl p-6 flex flex-col justify-between">
-                        <div>
-                            <h3 className="font-semibold text-blue-900 mb-4">
-                                Find All Hospitals
-                            </h3>
-
-                            <button className="border border-blue-500 text-blue-700 px-4 py-2 rounded-full hover:bg-blue-200 transition">
-                                View All →
-                            </button>
+                    {/* View All Card */}
+                    <div className="flex w-56 flex-shrink-0 flex-col items-center justify-center rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-100 to-cyan-100 p-6 text-center">
+                        <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow">
+                            <span className="text-2xl">🏥</span>
                         </div>
-
-                        {/* Illustration placeholder */}
-                        <div className="mt-6 h-40 bg-blue-200 rounded-xl flex items-center justify-center text-blue-700 text-sm">
-                            Illustration
-                        </div>
+                        <h3 className="mb-1 font-bold text-blue-900">500+ Hospitals</h3>
+                        <p className="mb-5 text-xs leading-relaxed text-blue-700">
+                            Explore all JCI & NABH accredited hospitals near you
+                        </p>
+                        <button className="rounded-full border border-blue-500 bg-white px-5 py-2 text-sm font-semibold text-blue-700 transition hover:bg-blue-600 hover:text-white">
+                            View All →
+                        </button>
                     </div>
-
                 </div>
+
             </div>
-        </section>
+        </div>
     );
 }

@@ -1,109 +1,66 @@
-import React from 'react';
+﻿import React from "react";
+import { ArrowRight, UserCog, BotMessageSquare } from "lucide-react";
+
+// 👇 Replace these with your actual image imports or URLs
+const AI_REPORT_IMG = "https://cdn-icons-png.flaticon.com/512/4228/4228948.png";
+const ROBOT_IMG = "https://cdn-icons-png.flaticon.com/512/4712/4712139.png";
 
 export default function Help() {
     return (
-        <div className="flex justify-center items-stretch gap-8 p-8 flex-wrap">
+        <div className="z-[-1] relative top-0 bg-slate-100 px-4 py-4">
+            <div className="mx-auto max-w-7xl">
+                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
 
-            {/* Left Side */}
-            <section className="
-        flex-1 min-w-[300px] basis-[320px]
-        bg-[#f5f7fa]
-        rounded-2xl
-        shadow-sm
-        p-8
-        flex flex-col items-center
-      ">
-                <img
-                    src="https://img.icons8.com/color/96/000000/health-graph.png"
-                    alt="AI Health Report"
-                    className="mb-4"
-                />
+                    {/* Card 1 — AI Health Reports */}
+                    <div className="relative flex min-h-[220px] items-center overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-cyan-50 to-blue-50 p-8 shadow-sm">
+                        {/* Text */}
+                        <div className="relative z-10 max-w-[55%]">
+                            <h2 className="mb-3 text-xl font-bold leading-tight text-blue-900 sm:text-2xl">
+                                AI Health Reports
+                            </h2>
+                            <p className="mb-6 text-sm leading-relaxed text-gray-600">
+                                Smart summaries, AI insights, personalized recommendations,
+                                instant interpretations, and a unified report view.
+                            </p>
+                            <button className="flex items-center gap-2 rounded-full border border-teal-600 bg-white px-5 py-2.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-600 hover:text-white">
+                                Get The App
+                                <span className="flex h-5 w-5 items-center justify-center rounded-full border border-current">
+                                    <ArrowRight size={11} />
+                                </span>
+                            </button>
+                        </div>
 
-                <h2 className="mb-2 text-xl font-semibold">
-                    AI Health Report
-                </h2>
+                        {/* Image — replace src with your own */}
+                        <UserCog size={120} className='absolute bottom-16 right-4' />
 
-                <p className="text-center">
-                    Download our app to access features on the go. Available for iOS and Android.
-                </p>
+                    </div>
 
-                <ul className="list-none p-0 mt-4 w-full">
-                    <li className="mb-2">
-                        <a
-                            href="https://apps.apple.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="
-                inline-block
-                bg-[#0070c9]
-                text-white
-                px-4 py-2
-                rounded-lg
-                font-bold
-                no-underline
-              "
-                        >
-                            Download on the App Store
-                        </a>
-                    </li>
+                    {/* Card 2 — Wellness Companion */}
+                    <div className="relative flex min-h-[220px] items-center overflow-hidden rounded-3xl border border-orange-100 bg-gradient-to-br from-orange-50 to-amber-50 p-8 shadow-sm">
+                        {/* Text */}
+                        <div className="relative z-10 max-w-[55%]">
+                            <h2 className="mb-3 text-xl font-bold leading-tight text-blue-900 sm:text-2xl">
+                                Your Wellness Companion
+                            </h2>
+                            <p className="mb-6 text-sm leading-relaxed text-gray-600">
+                                Your trusted partner for smarter, personalized, and
+                                effortless health management.
+                            </p>
+                            <button className="flex items-center gap-2 rounded-full border border-teal-600 bg-white px-5 py-2.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-600 hover:text-white">
+                                Chat Now
+                                <span className="flex h-5 w-5 items-center justify-center rounded-full border border-current">
+                                    <ArrowRight size={11} />
+                                </span>
+                            </button>
+                        </div>
 
-                    <li>
-                        <a
-                            href="https://play.google.com/store"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline"
-                        >
-                            Get it on Google Play
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                        {/* Image — replace src with your own */}
+                        <BotMessageSquare size={120} className='absolute bottom-16 right-4' />
 
-            {/* Right Side */}
-            <section className="
-        flex-1 min-w-[300px] basis-[320px]
-        bg-[#fff7f0]
-        rounded-2xl
-        shadow-sm
-        p-8
-        flex flex-col items-center
-      ">
-                <img
-                    src="https://img.icons8.com/color/96/000000/chatbot.png"
-                    alt="Your Wellness Companion"
-                    className="mb-4"
-                />
+                    </div>
 
-                <h2 className="mb-2 text-xl font-semibold">
-                    Your Wellness Companion
-                </h2>
-
-                <p className="text-center">
-                    Need help? Chat with our virtual assistant for instant support.
-                </p>
-
-                <button
-                    onClick={() => alert("Chatbot coming soon!")}
-                    className="
-            mt-4
-            bg-orange-500
-            text-white
-            border-none
-            rounded-lg
-            px-6 py-3
-            text-base
-            font-bold
-            cursor-pointer
-            shadow-sm
-            hover:bg-orange-600
-            transition
-          "
-                >
-                    Ask the Bot
-                </button>
-            </section>
-
+                </div>
+            </div>
         </div>
     );
 }
