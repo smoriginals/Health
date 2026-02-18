@@ -1,5 +1,6 @@
 ﻿import React, { useState } from "react";
 import { MapPin, Building2, UserRound, ChevronRight } from "lucide-react";
+import india from '../assets/india.png';
 
 const locations = [
     {
@@ -56,7 +57,7 @@ export default function Locations() {
     const [active, setActive] = useState(0);
 
     return (
-        <div className="relative top-0 bg-slate-100 px-4 py-16">
+        <div className="relative top-16 bg-slate-100 px-4 py-16">
             <div className="mx-auto max-w-7xl">
 
                 {/* Header */}
@@ -71,13 +72,13 @@ export default function Locations() {
                 <div className="hidden lg:grid lg:grid-cols-2 lg:items-start lg:gap-10">
 
                     {/* Left — India map */}
-                    <div className="sticky top-24 overflow-hidden rounded-3xl border border-blue-100 bg-white p-6 shadow-sm">
-                        <div className="relative flex items-center justify-center">
+                    <div className="sticky top-24 h-96 overflow-hidden rounded-3xl border border-blue-100 bg-white p-6 shadow-sm">
+                        <div className="relative flex h-full items-center justify-center">
                             <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/e/e0/India_map_transparent.png"
+                                src={india}
                                 alt="India Map"
-                                className="h-auto w-full max-w-sm opacity-80 drop-shadow-xl"
-                                style={{ filter: "hue-rotate(180deg) brightness(0.65)" }}
+                                className="h-full w-auto scale-110 drop-shadow-xl"
+                                
                             />
                             {/* Animated pin */}
                             <div className="absolute left-[44%] top-[28%] animate-bounce">

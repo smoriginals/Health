@@ -19,6 +19,7 @@ import Locations from './Pages/Locations'
 import Faq from './Pages/Faq'
 import Footer from './Pages/footer'
 import MobileFooter from './Components/MobileFooter'
+import Chatbot from './Pages/Chatbot'
 
 export default function App() {
 
@@ -46,7 +47,7 @@ export default function App() {
             <Help />
             <Footer />
             <MobileFooter />
-            
+            <Chatbot />
         </>
     )
 }

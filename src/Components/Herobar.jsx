@@ -6,10 +6,11 @@ import {
     ArrowRight,
     Star,
 } from "lucide-react";
-
 import hero from "../assets/hero.webp";
 import moblogo from "../assets/moblogo.webp";
 export default function Herobar() {
+
+    
 
 
     return (

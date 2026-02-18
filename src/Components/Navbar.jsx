@@ -1,7 +1,13 @@
 ﻿import React, { useState, useRef } from "react";
-import { Search, Calendar, User, HeartPulse, ChevronDown, Phone, MessageCircle, ChevronRight } from "lucide-react";
+import { Search, Calendar, User, CircleUserRound, ChevronDown, Phone, MessageCircle, ChevronRight, MapPin } from "lucide-react";
 import { Menu, X } from "lucide-react";
 import logoc from "../assets/logoc.svg";
+
+//material ui
+
+// material ui
+
+
 export default function Navbar() {
 
     const [open, setOpen] = useState(false);
@@ -114,29 +120,16 @@ export default function Navbar() {
     return (
         <>
 
-            <nav className="fixed z-40 flex h-16 w-full items-center justify-between border-b bg-white px-4 md:px-16">
+            <nav className="fixed z-40 flex h-16 w-full items-center justify-between border-b bg-white px-1 md:px-6">
 
                 <div className="flex w-full items-center justify-between">
 
-                    <div className="flex items-center">
+                    <div className="flex shrink-0 items-center gap-1">
 
                         {/* LEFT — Logo */}
-                        <div className="flex items-center px-4">
+                        <div className="flex items-center px-2 py-1">
 
                             <div>
-                                {/*<div className="text-2xl font-bold">*/}
-                                {/*    <p className='flex items-center'>*/}
-                                {/*        <span className='text-blue-500'>*/}
-                                {/*            Hexa*/}
-                                {/*        </span>*/}
-                                {/*        <span className='text-black'>*/}
-                                {/*            Health*/}
-                                {/*        </span>*/}
-                                {/*    </p>*/}
-                                {/*</div>*/}
-                                {/*<div className="text-xs text-gray-500">*/}
-                                {/*    The Next Generation Hospital*/}
-                                {/*</div>*/}
                                 <img src={logoc} alt="HexaHealth" className="h-8 w-full" />
                             </div>
 
@@ -144,7 +137,7 @@ export default function Navbar() {
 
 
                         {/* CENTER — Menu */}
-                        <ul className="hidden gap-2 font-medium text-gray-700 md:flex">
+                        <ul className="hidden gap-2 p-2 font-medium text-gray-700 md:flex md:items-center md:justify-evenly">
 
                             <li
                                 className="relative"
@@ -273,52 +266,22 @@ export default function Navbar() {
                         </ul>
                     </div>
 
-                    <div className=''>
-
-                        {/* RIGHT — Actions */}
-                        {/*<div className="flex w-full flex-row justify-center gap-1 bg-red-500">*/}
-
-                        {/*    <div className='md:hidden'>*/}
-                        {/*        */}{/* Search Circle */}
-                        {/*        <button className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-400 text-blue-600 transition hover:bg-blue-50">*/}
-                        {/*            <Phone size={18} />*/}
-
-                        {/*        </button> <button className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-400 text-blue-600 transition hover:bg-blue-50">*/}
-                        {/*            <MessageCircle size={18} />*/}
-                        {/*        </button>*/}
-                        {/*    </div>*/}
-
-                        {/*    <button className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-400 text-blue-600 transition hover:bg-blue-50">*/}
-                        {/*        <Search size={18} />*/}
-                        {/*    </button>*/}
-                        {/*    */}{/* Book Appointment */}
-                        {/*    <button className="hidden items-center gap-2 rounded-full bg-blue-100 px-5 py-2 font-medium text-blue-700 transition hover:bg-blue-200 sm:flex">*/}
-                        {/*        <Calendar size={18} />*/}
-                        {/*        Book Appointment*/}
-                        {/*    </button>*/}
-
-                        {/*    */}{/* Login */}
-                        {/*    <button className="hidden items-center gap-2 rounded-full bg-blue-600 px-5 py-2 font-medium text-white transition hover:bg-blue-700 sm:flex">*/}
-                        {/*        <User size={18} />*/}
-                        {/*        Login*/}
-                        {/*    </button>*/}
-
-                        {/*</div>*/}
+                    <div className='mx-2 p-1'>
 
                         {/* RIGHT — Desktop Actions */}
-                        <div className="hidden flex-row justify-center gap-2 md:flex">
+                        <div className="hidden flex-row items-center justify-center gap-2 px-2 md:flex">
 
-                            <button className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-400 text-blue-600 hover:bg-blue-50">
-                                <Search size={18} />
+                            <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-blue-400 text-blue-600 hover:bg-blue-50">
+                                <Search size={16} />
                             </button>
 
-                            <button className="flex items-center gap-2 rounded-full bg-blue-100 px-5 py-2 font-medium text-blue-700 hover:bg-blue-200">
-                                <Calendar size={18} />
+                            <button className="flex shrink-0 items-center gap-2 rounded-full bg-blue-100 px-5 py-2 font-medium text-blue-700 hover:bg-blue-200">
+                                <Calendar size={16} />
                                 Book Appointment
                             </button>
 
-                            <button className="flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2 font-medium text-white hover:bg-blue-700">
-                                <User size={18} />
+                            <button className="shrink-1 flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2 font-medium text-white hover:bg-blue-700">
+                                <User size={16} />
                                 Login
                             </button>
 
@@ -357,57 +320,135 @@ export default function Navbar() {
             </nav>
 
             {/* Mobile Slide Menu */}
-            <div
-                className={` 
-    fixed top-0 right-0 h-full w-72 bg-white shadow-2xl
-    transform transition-transform duration-300 z-50
-    ${mobileOpen ? "translate-x-0" : "translate-x-full"}
-  `}
-            >
-                <div className="flex flex-col gap-4 p-6">
 
-                    <button
-                        onClick={() => setMobileOpen(false)}
-                        className="self-end"
-                    >
-                        <X />
-                    </button>
+            <div className={`fixed inset-x-0 top-16 bottom-0 w-full bg-white shadow-2xl transform transition-transform duration-300 z-50 overflow-y-scroll overscroll-contain touch-pan-y ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}>
+
+                <div className="flex min-h-full flex-col gap-4 p-6">
+
+                    {/*//Extra close button at top right of menu (optional)*/}
+
+                    {/*<button*/}
+                    {/*    onClick={() => setMobileOpen(false)}*/}
+                    {/*    className="self-end"*/}
+                    {/*>*/}
+                    {/*    <X />*/}
+                    {/*</button>*/}
+
+                    {/*//Extra close button at top right of menu (optional)*/}
+
+
 
                     {/* NAV LINKS */}
-                    <div className="flex flex-col gap-4 text-lg font-medium">
+                    <div className="flex flex-col gap-4 pb-32 text-lg font-medium">
 
-                        <div>
-                            <div className="mb-2 font-semibold">Departments</div>
-                            {departments.map(d => (
-                                <div key={d} className="py-1 text-gray-600">
-                                    {d}
-                                </div>
-                            ))}
+                        <div className='flex h-20 w-full items-center justify-center gap-1 rounded-md border bg-[#0F80A5] text-2xl font-bold text-white'>
+                            <CircleUserRound size={30} />
+                            <p>Login</p>
                         </div>
 
-                        <div>
-                            <div className="mb-2 font-semibold">Conditions</div>
-                            {Object.keys(conditionMenu).map(k => (
-                                <div key={k} className="py-1 text-gray-600">
-                                    {k}
-                                </div>
-                            ))}
+                        <div className='flex h-20 w-full items-center justify-between gap-1 rounded-md border bg-gray-200 px-4 text-2xl'>
+                            <div className='flex flex-nowrap gap-2'>
+                                <MapPin size={30} />
+                                <p>Delhi</p>
+                            </div>
+                            <div className='flex flex-nowrap'>
+                                <p>Edit</p>
+                            </div>
                         </div>
 
-                        <div>
-                            <div className="mb-2 font-semibold">Treatments</div>
-                            {Object.keys(treatmentMenu).map(k => (
-                                <div key={k} className="py-1 text-gray-600">
-                                    {k}
-                                </div>
-                            ))}
-                        </div>
+                        {/* Departments Accordion */}
+                        <details className="group border-b pb-2 [&_summary::-webkit-details-marker]:hidden">
+                            <summary className="flex cursor-pointer items-center justify-between py-2 font-semibold">
+                                Departments
+                                <ChevronDown className="transition-transform duration-300 group-open:rotate-180" />
+                            </summary>
+
+                            <div className="mt-2 space-y-1 pl-3">
+                                {departments.map(d => (
+                                    <div key={d} className="py-1 text-gray-600 hover:text-blue-600">
+                                        {d}
+                                    </div>
+                                ))}
+                            </div>
+                        </details>
+
+
+                        {/* Conditions Accordion */}
+                        <details className="group border-b pb-2 [&_summary::-webkit-details-marker]:hidden">
+                            <summary className="flex cursor-pointer items-center justify-between py-2 font-semibold">
+                                Conditions
+                                <ChevronDown className="transition-transform duration-300 group-open:rotate-180" />
+                            </summary>
+
+                            <div className="mt-2 space-y-1 pl-3">
+
+                                {Object.entries(conditionMenu).map(([k, items]) => (
+                                    <details key={k} className="group/nested [&_summary::-webkit-details-marker]:hidden">
+
+                                        <summary className="flex cursor-pointer items-center justify-between px-2 py-1 text-gray-600 hover:text-blue-600">
+                                            {k}
+                                            <ChevronDown
+                                                size={18}
+                                                className="transition-transform duration-300 group-open/nested:rotate-180"
+                                            />
+                                        </summary>
+
+                                        <div className="ml-4 mt-1 space-y-1 border-l pl-3">
+                                            {items.map(item => (
+                                                <div key={item} className="py-1 text-gray-500 hover:text-blue-600">
+                                                    {item}
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                    </details>
+                                ))}
+
+                            </div>
+                        </details>
+
+
+                        {/* Treatments Accordion */}
+                        <details className="group border-b pb-2 [&_summary::-webkit-details-marker]:hidden">
+                            <summary className="flex cursor-pointer items-center justify-between py-2 font-semibold">
+                                Treatments
+                                <ChevronDown className="transition-transform duration-300 group-open:rotate-180" />
+                            </summary>
+
+                            <div className="mt-2 space-y-1 pl-3">
+
+                                {Object.entries(treatmentMenu).map(([k, items]) => (
+                                    <details key={k} className="group/nested [&_summary::-webkit-details-marker]:hidden">
+
+                                        <summary className="flex cursor-pointer items-center justify-between px-2 py-1 text-gray-600 hover:text-blue-600">
+                                            {k}
+                                            <ChevronDown
+                                                size={18}
+                                                className="transition-transform duration-300 group-open/nested:rotate-180"
+                                            />
+                                        </summary>
+
+                                        <div className="ml-4 mt-1 space-y-1 border-l pl-3">
+                                            {items.map(item => (
+                                                <div key={item} className="py-1 text-gray-500 hover:text-blue-600">
+                                                    {item}
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                    </details>
+                                ))}
+
+                            </div>
+                        </details>
+
 
                         <a href="/" className="font-semibold text-blue-600">
                             For Investors
                         </a>
 
                     </div>
+
                 </div>
             </div>
         </>
