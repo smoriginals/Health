@@ -1,12 +1,14 @@
 ﻿import React, { useState, useRef } from "react";
-import { Search, Calendar, User, CircleUserRound, ChevronDown, Phone, MessageCircle, ChevronRight, MapPin } from "lucide-react";
+import { Search, Calendar, User, CircleUserRound, ChevronDown, MessageCircleMore, ChevronRight, MapPin } from "lucide-react";
+
 import { Menu, X } from "lucide-react";
 import logoc from "../assets/logoc.svg";
-
-//material ui
-
-// material ui
-
+import Sidebar from "../Components/Sidebar";
+import LoginDrawer from "../Components/LoginDrawer";
+import LocationDrawer from "./LocationDrawer";
+import { Button } from "@/components/ui/button";
+import Booking from "../Pages/Booking";
+import CitySearch from "./CitySearch";
 
 export default function Navbar() {
 
@@ -116,6 +118,20 @@ export default function Navbar() {
 
     //Mobile Menu State
     const [mobileOpen, setMobileOpen] = useState(false);
+
+
+
+
+    const WhatsappSupport = (e) => {
+        e.preventDefault()
+        
+        window.open(
+            "https://api.whatsapp.com/send/?phone=918860688606&text=Hi%2C+I+want+to+book+an+appointment+with+a+Cardiology+doctor+departmentid%3D33&type=phone_number&app_absent=0",
+            "_blank"
+        );
+        console.log("clicked")
+    }
+
 
     return (
         <>
@@ -271,7 +287,8 @@ export default function Navbar() {
                         {/* RIGHT — Desktop Actions */}
                         <div className="hidden flex-row items-center justify-center gap-2 px-2 md:flex">
 
-                            <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-blue-400 text-blue-600 hover:bg-blue-50">
+                            <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-blue-400 text-blue-600 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:text-white active:scale-95 transition-all duration-150">
+
                                 <Search size={16} />
                             </button>
 
@@ -279,6 +296,7 @@ export default function Navbar() {
                                 <Calendar size={16} />
                                 Book Appointment
                             </button>
+                           
 
                             <button className="shrink-1 flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2 font-medium text-white hover:bg-blue-700">
                                 <User size={16} />
@@ -291,17 +309,13 @@ export default function Navbar() {
                         {/* MOBILE HEADER RIGHT */}
                         <div className="flex items-center gap-2 md:hidden">
 
-                            <button className="rounded-full border p-2 text-blue-600">
-                                <Phone size={18} />
+                            <button className="rounded-full border p-2 text-blue-600 h-9 w-9 flex justify-center items-center" onClick={WhatsappSupport}>
+                                <MessageCircleMore size={20} />
                             </button>
 
-                            <button className="rounded-full border p-2 text-blue-600">
-                                <Search size={18} />
-                            </button>
+                            <Sidebar/>
 
-                            <button className="rounded-full border p-2 text-blue-600">
-                                <MessageCircle size={18} />
-                            </button>
+                            <LoginDrawer />
 
                             {/* Hamburger */}
                             <button
@@ -325,35 +339,19 @@ export default function Navbar() {
 
                 <div className="flex min-h-full flex-col gap-4 p-6">
 
-                    {/*//Extra close button at top right of menu (optional)*/}
-
-                    {/*<button*/}
-                    {/*    onClick={() => setMobileOpen(false)}*/}
-                    {/*    className="self-end"*/}
-                    {/*>*/}
-                    {/*    <X />*/}
-                    {/*</button>*/}
-
-                    {/*//Extra close button at top right of menu (optional)*/}
-
-
-
                     {/* NAV LINKS */}
                     <div className="flex flex-col gap-4 pb-32 text-lg font-medium">
 
-                        <div className='flex h-20 w-full items-center justify-center gap-1 rounded-md border bg-[#0F80A5] text-2xl font-bold text-white'>
-                            <CircleUserRound size={30} />
-                            <p>Login</p>
-                        </div>
+                        <LoginDrawer>
+                            <button className='flex h-20 w-full items-center justify-center gap-1 rounded-md border bg-[#0F80A5] text-2xl font-bold text-white'>
+                                <CircleUserRound size={30} />
+                                <p>Login</p>
+                            </button>
+                        </LoginDrawer>
 
-                        <div className='flex h-20 w-full items-center justify-between gap-1 rounded-md border bg-gray-200 px-4 text-2xl'>
-                            <div className='flex flex-nowrap gap-2'>
-                                <MapPin size={30} />
-                                <p>Delhi</p>
-                            </div>
-                            <div className='flex flex-nowrap'>
-                                <p>Edit</p>
-                            </div>
+
+                        <div className='h-24 w-full'>
+                            <CitySearch />
                         </div>
 
                         {/* Departments Accordion */}

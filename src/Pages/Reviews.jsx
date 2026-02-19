@@ -70,7 +70,10 @@ const reviews = [
 
 export default function Reviews() {
     return (
-        <div className="relative top-0 bg-slate-100 px-4 py-12">
+        <section
+            id="reviews"
+            className="scroll-mt-28 bg-slate-100 px-4 py-12"
+        >
             <div className="mx-auto max-w-7xl">
 
                 {/* Header */}
@@ -135,6 +138,6 @@ export default function Reviews() {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 }

@@ -20,34 +20,48 @@ import Faq from './Pages/Faq'
 import Footer from './Pages/footer'
 import MobileFooter from './Components/MobileFooter'
 import Chatbot from './Pages/Chatbot'
+import AreaPage from './Pages/AreaPage'
+import { Routes, Route } from 'react-router-dom'
 
 export default function App() {
-
     return (
-        <>
-            <Navbar />
-            <Herobar />
-            <Quotes />
-            <Specialties />
-            <Solutions />
-            <Hospitals />
-            <HealthGPT />
-            <Doctors />
-            <GotoCommunity />
-            <HealthQuestions />
-            <Help />
-            <Reviews />
-            <PatientsStories />
-            <HexaNews />
-            <LatestArticles />
-            <LatestVideos />
-            <Booking />
-            <Locations />
-            <Faq />
-            <Help />
-            <Footer />
-            <MobileFooter />
-            <Chatbot />
-        </>
+        <Routes>
+
+            {/* ===== HOME PAGE ===== */}
+            <Route
+                path="/"
+                element={
+                    <>
+                        <Navbar />
+                        <Herobar />
+                        <Quotes />
+                        <Specialties />
+                        <Solutions />
+                        <Hospitals />
+                        <HealthGPT />
+                        <Doctors />
+                        <GotoCommunity />
+                        <HealthQuestions />
+                        <Help />
+                        <Reviews />
+                        <PatientsStories />
+                        <HexaNews />
+                        <LatestArticles />
+                        <LatestVideos />
+                        <Booking />
+                        <Locations />
+                        <Faq />
+                        <Help />
+                        <Footer />
+                        <MobileFooter />
+                        <Chatbot />
+                    </>
+                }
+            />
+
+            {/* ===== AREA PAGE ===== */}
+            <Route path="/area" element={<AreaPage />} />
+
+        </Routes>
     )
 }
