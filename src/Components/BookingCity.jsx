@@ -1,0 +1,119 @@
+﻿import { useState, useEffect } from "react"
+import { MapPin, ChevronDown } from "lucide-react"
+
+import {
+    Drawer,
+    DrawerTrigger,
+    DrawerContent,
+    DrawerHeader,
+    DrawerTitle,
+} from "@/components/ui/drawer"
+
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+
+export default function BookingCity({ onChange }) {
+
+    const [city, setCity] = useState("Delhi")
+    const [query, setQuery] = useState("")
+    const [area, setArea] = useState("")
+    const [open, setOpen] = useState(false)
+
+    const data = {
+        Delhi: ["Rohini", "Dwarka", "Saket", "Karol Bagh", "Janakpuri", "Lajpat Nagar", "Pitampura"],
+        Mumbai: ["Andheri", "Bandra", "Juhu", "Powai", "Colaba"],
+        Bangalore: ["Whitefield", "Indiranagar", "BTM", "Electronic City"],
+    }
+
+    const cities = Object.keys(data)
+
+    const filteredAreas =
+        (data[city] || []).filter(a =>
+            a.toLowerCase().includes(query.toLowerCase())
+        )
+
+    useEffect(() => {
+        onChange?.({ city, area })
+    }, [city, area])
+
+    return (
+        <div className="flex w-full flex-col gap-2">
+
+            {/* ===== CITY SELECT ===== */}
+            <Drawer open={open} onOpenChange={setOpen}>
+                <DrawerTrigger asChild>
+                    <Button
+                        size="sm"
+                        className="w-fit gap-2 rounded-full bg-black text-white hover:bg-black/80"
+                    >
+                        <MapPin size={16} />
+                        {city}
+                        <ChevronDown size={14} />
+                    </Button>
+                </DrawerTrigger>
+
+                <DrawerContent>
+                    <DrawerHeader>
+                        <DrawerTitle>Select City</DrawerTitle>
+                    </DrawerHeader>
+
+                    <div className="grid grid-cols-2 gap-3 p-4">
+                        {cities.map((c) => (
+                            <Button
+                                key={c}
+                                className="bg-black text-white hover:bg-black/80"
+                                onClick={() => {
+                                    setCity(c)
+                                    setArea("")
+                                    setQuery("")
+                                    setOpen(false)
+                                }}
+                            >
+                                {c}
+                            </Button>
+                        ))}
+                    </div>
+                </DrawerContent>
+            </Drawer>
+
+            {/* ===== AREA SEARCH ===== */}
+            <div className="relative">
+
+                <Input
+                    value={query}
+                    placeholder={`Search area in ${city}`}
+                    className="h-12 rounded-full border border-gray-300 bg-white text-base"
+                    onChange={(e) => {
+                        setQuery(e.target.value)
+                        setArea("")
+                    }}
+                />
+
+                {query && !area && (
+                    <div className="z-[999] absolute top-14 w-full rounded-xl border bg-white shadow-lg">
+
+                        {filteredAreas.length === 0 && (
+                            <div className="p-3 text-sm text-gray-400">
+                                No areas found
+                            </div>
+                        )}
+
+                        {filteredAreas.map((a) => (
+                            <div
+                                key={a}
+                                onClick={() => {
+                                    setArea(a)
+                                    setQuery(a)
+                                }}
+                                className="cursor-pointer p-3 text-sm hover:bg-black hover:text-white transition"
+                            >
+                                {a}
+                            </div>
+                        ))}
+                    </div>
+                )}
+
+            </div>
+        </div>
+    )
+}

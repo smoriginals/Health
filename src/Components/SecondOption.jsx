@@ -1,5 +1,6 @@
-﻿import { useState } from "react"
+﻿import { useState, useRef } from "react"
 import BookingCity from "../Components/BookingCity"
+import { ArrowUpFromLine } from "lucide-react"
 
 import {
     Sheet,
@@ -31,9 +32,9 @@ import { Button } from "@/components/ui/button"
 
 
 
-export default function BookingAppointments({ children }) {
+export default function SecondOption({ children }) {
 
-
+    const fileRef = useRef(null)
 
     const [location, setLocation] = useState({})
 
@@ -41,17 +42,33 @@ export default function BookingAppointments({ children }) {
         name: "",
         mobile: "",
         treatment: "",
-        issue: ""
+        issue: "",
+        report: null,
     })
 
     const update = (k, v) =>
         setForm(f => ({ ...f, [k]: v }))
 
-    const submit = () => {
-        console.log(form)
+    const handleFile = (e) => {
+        const file = e.target.files[0]
+        if (file) update("report", file)
     }
 
-    // ===== SHARED FORM =====
+    const submit = () => {
+        console.log({
+            ...form,
+            location
+        })
+    }
+
+    // Shared Trigger
+    const TriggerUI = children || (
+        <Button className="bg-black text-white">
+            Book Appointment
+        </Button>
+    )
+
+    // Shared Form
     const FormUI = (
         <div className="mt-4 space-y-4">
 
@@ -68,11 +85,9 @@ export default function BookingAppointments({ children }) {
                 onChange={(e) => update("mobile", e.target.value)}
             />
 
-            {/* Your City Search */}
             <BookingCity onChange={setLocation} />
-            {/*<LocationDrawer/>*/}
-            
-            {/* Treatment Select */}
+
+            {/* Treatment */}
             <Select onValueChange={(v) => update("treatment", v)}>
                 <SelectTrigger>
                     <SelectValue placeholder="Select Treatment" />
@@ -86,6 +101,33 @@ export default function BookingAppointments({ children }) {
                 </SelectContent>
             </Select>
 
+            {/* Report Upload */}
+            <div className="space-y-2">
+
+                <input
+                    ref={fileRef}
+                    type="file"
+                    hidden
+                    onChange={handleFile}
+                />
+
+                <Button
+                    type="button"
+                    className="flex h-12 w-full items-center gap-2 font-semibold"
+                    onClick={() => fileRef.current?.click()}
+                >
+                    <ArrowUpFromLine size={18} />
+                    Upload Report
+                </Button>
+
+                {form.report && (
+                    <p className="truncate text-xs text-gray-500">
+                        Selected: {form.report.name}
+                    </p>
+                )}
+
+            </div>
+
             <Textarea
                 rows={4}
                 placeholder="Describe your issue"
@@ -94,7 +136,7 @@ export default function BookingAppointments({ children }) {
             />
 
             <Button
-                className="h-12 w-full bg-black text-lg hover:bg-black/80"
+                className="h-12 w-full bg-black text-lg font-semibold hover:bg-black/80"
                 onClick={submit}
             >
                 Book Appointment
@@ -103,23 +145,23 @@ export default function BookingAppointments({ children }) {
             <p className="text-center text-xs text-gray-500">
                 By continuing, you agree to our terms and privacy policy.
             </p>
+
         </div>
     )
 
-
     return (
         <>
-
-            {/* ===== MOBILE SHEET ===== */}
+            {/* MOBILE */}
             <div className="md:hidden">
-
                 <Sheet>
                     <SheetTrigger asChild>
-                        {children}
+                        {TriggerUI}
                     </SheetTrigger>
 
-                    <SheetContent side="bottom" className="h-auto overflow-y-auto rounded-t-2xl">
-
+                    <SheetContent
+                        side="bottom"
+                        className="max-h-[90vh] overflow-y-auto rounded-t-2xl"
+                    >
                         <SheetHeader>
                             <SheetTitle className="text-2xl">
                                 Book Appointment
@@ -127,24 +169,18 @@ export default function BookingAppointments({ children }) {
                         </SheetHeader>
 
                         {FormUI}
-
                     </SheetContent>
                 </Sheet>
-
             </div>
 
-
-            {/* ===== DESKTOP CENTER POPUP ===== */}
+            {/* DESKTOP */}
             <div className="hidden md:block">
-
                 <Dialog>
-
                     <DialogTrigger asChild>
-                        {children}
+                        {TriggerUI}
                     </DialogTrigger>
 
                     <DialogContent className="max-w-lg">
-
                         <DialogHeader>
                             <DialogTitle className="text-2xl">
                                 Book Appointment
@@ -152,13 +188,9 @@ export default function BookingAppointments({ children }) {
                         </DialogHeader>
 
                         {FormUI}
-
                     </DialogContent>
-
                 </Dialog>
-
             </div>
-
         </>
     )
 }

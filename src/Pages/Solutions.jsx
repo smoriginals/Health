@@ -3,6 +3,7 @@ import mobile from "../assets/mobile.webp";
 import consult from "../assets/consult.webp";
 import parents from "../assets/parents.webp";
 import { CircleCheck } from "lucide-react";
+import BookingAppointments from "../Components/BookingAppointments";
 
 const sections = [
     {
@@ -78,9 +79,11 @@ export default function OneStopSolution() {
                                     <p>{p}</p>
                                 </div>
                             ))}
-                            <button className="mt-4 h-14 w-full max-w-[320px] rounded-full bg-blue-500 text-xl font-semibold text-white transition hover:scale-105">
-                                Book Appointment
-                            </button>
+                            <BookingAppointments>
+                                <button className="mt-4 h-14 w-full max-w-[320px] rounded-full bg-blue-500 text-xl font-semibold text-white transition hover:scale-105">
+                                    Book Appointment
+                                </button>
+                            </BookingAppointments>
                         </div>
                     </div>
                 ))}
@@ -115,9 +118,11 @@ export default function OneStopSolution() {
                                         <p>{p}</p>
                                     </div>
                                 ))}
-                                <button className="mt-6 h-14 w-64 rounded-full bg-blue-500 text-xl font-semibold text-white transition hover:scale-105">
-                                    Book Appointment
-                                </button>
+                                <BookingAppointments>
+                                    <button className="mt-6 h-14 w-64 rounded-full bg-blue-500 text-xl font-semibold text-white transition hover:scale-105">
+                                        Book Appointment
+                                    </button>
+                                </BookingAppointments>
                             </div>
                         </div>
                     ))}

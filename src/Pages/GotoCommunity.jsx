@@ -1,5 +1,8 @@
 ﻿import React from 'react';
 import community from "../assets/community.webp";
+import Community from '../Components/Community';
+
+
 export default function GotoCommunity() {
     return (
         <>
@@ -13,12 +16,14 @@ export default function GotoCommunity() {
                         <p className="mb-8 text-gray-600">
                             Connect with healthcare experts and fellow patients, explore related topics, and get trusted guidance to make confident, informed health decisions.
                         </p>
-                        <a
-                            href="#"
-                            className="inline-block rounded-full bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700"
-                        >
-                            Go to Community
-                        </a>
+                        <Community>
+                            <button
+                                
+                                className="inline-block rounded-full bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700"
+                            >
+                                Go to Community
+                            </button>
+                        </Community>
                     </div>
                     {/* Right Side: Image */}
                     <div className="flex w-full justify-center md:w-1/2">

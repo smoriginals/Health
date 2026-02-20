@@ -138,7 +138,7 @@ export default function Specialties() {
     ];
 
     return (
-        <div className="z-[-1] relative top-16 w-full bg-gradient-to-b from-white to-gray-50 px-2 py-4">
+        <div className="relative top-16 w-full bg-gradient-to-b from-white to-gray-50 px-2 py-4">
             <div className="mx-auto max-w-7xl p-2">
                 {/* Statistics Section */}
                 <div className="mb-20 grid grid-cols-2 items-center justify-between gap-8 p-2 md:grid-cols-2 lg:grid-cols-4">

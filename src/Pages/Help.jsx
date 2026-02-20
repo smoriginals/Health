@@ -1,13 +1,20 @@
 ﻿import React from "react";
 import { ArrowRight, UserCog, BotMessageSquare } from "lucide-react";
+import AskGpt from "../Components/AskGpt";
 
 // 👇 Replace these with your actual image imports or URLs
 const AI_REPORT_IMG = "https://cdn-icons-png.flaticon.com/512/4228/4228948.png";
 const ROBOT_IMG = "https://cdn-icons-png.flaticon.com/512/4712/4712139.png";
 
 export default function Help() {
+
+    const OpenStore = (e) => {
+        e.preventDefault();
+        window.open("https://play.google.com/store/apps/details?id=com.curely.app", "_blank");
+    }
+
     return (
-        <div className="z-[-1] relative top-0 bg-slate-100 px-4 py-4">
+        <div className="relative top-0 z-0 bg-slate-100 px-4 py-4">
             <div className="mx-auto max-w-7xl">
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
 
@@ -22,7 +29,7 @@ export default function Help() {
                                 Smart summaries, AI insights, personalized recommendations,
                                 instant interpretations, and a unified report view.
                             </p>
-                            <button className="flex items-center gap-2 rounded-full border border-teal-600 bg-white px-5 py-2.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-600 hover:text-white">
+                            <button className="flex cursor-pointer items-center gap-2 rounded-full border border-teal-600 bg-white px-5 py-2.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-600 hover:text-white" onClick={OpenStore}>
                                 Get The App
                                 <span className="flex h-5 w-5 items-center justify-center rounded-full border border-current">
                                     <ArrowRight size={11} />
@@ -46,12 +53,14 @@ export default function Help() {
                                 Your trusted partner for smarter, personalized, and
                                 effortless health management.
                             </p>
-                            <button className="flex items-center gap-2 rounded-full border border-teal-600 bg-white px-5 py-2.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-600 hover:text-white">
-                                Chat Now
-                                <span className="flex h-5 w-5 items-center justify-center rounded-full border border-current">
-                                    <ArrowRight size={11} />
-                                </span>
-                            </button>
+                            <AskGpt>
+                                <button className="flex items-center gap-2 rounded-full border border-teal-600 bg-white px-5 py-2.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-600 hover:text-white">
+                                    Chat Now
+                                    <span className="flex h-5 w-5 items-center justify-center rounded-full border border-current">
+                                        <ArrowRight size={11} />
+                                    </span>
+                                </button>
+                            </AskGpt>
                         </div>
 
                         {/* Image — replace src with your own */}

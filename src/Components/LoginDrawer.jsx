@@ -1,4 +1,6 @@
-import { CircleUserRound } from "lucide-react";
+﻿import { useState } from "react"
+import { CircleUserRound } from "lucide-react"
+
 import {
     Sheet,
     SheetContent,
@@ -6,64 +8,108 @@ import {
     SheetTitle,
     SheetDescription,
     SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/ui/sheet"
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
+import {
+    Dialog,
+    DialogContent,
+    DialogHeader,
+    DialogTitle,
+    DialogDescription,
+    DialogTrigger,
+} from "@/components/ui/dialog"
+
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+
 
 export default function LoginDrawer({ children }) {
-    const [mobile, setMobile] = useState("");
+    const [mobile, setMobile] = useState("")
 
     const handleLogin = () => {
-        console.log("Mobile:", mobile);
-    };
+        console.log("Mobile:", mobile)
+    }
+
+    // Shared Trigger
+    const TriggerUI = children ? (
+        children
+    ) : (
+        <Button
+            className="flex h-9 w-9 items-center justify-center rounded-full border"
+            variant="outline"
+        >
+            <CircleUserRound stroke="blue" size={20} />
+        </Button>
+    )
+
+    // Shared Form
+    const FormUI = (
+        <div className="mt-6 space-y-4">
+
+            <Input
+                type="tel"
+                placeholder="Enter mobile number"
+                value={mobile}
+                onChange={(e) => setMobile(e.target.value)}
+                className="h-14"
+            />
+
+            <Button
+                className="h-12 w-full"
+                onClick={handleLogin}
+                disabled={!mobile}
+            >
+                Verify & Login
+            </Button>
+
+        </div>
+    )
 
     return (
-        <Sheet>
+        <>
+            {/* MOBILE */}
+            <div className="md:hidden">
+                <Sheet>
+                    <SheetTrigger asChild>
+                        {TriggerUI}
+                    </SheetTrigger>
 
-            {/* Trigger */}
-            <SheetTrigger asChild>
-                {children ? (
-                    children
-                ) : (
-                    <Button
-                            className="w-9 h-9 rounded-full border flex justify-center items-center"
-                        variant="outline"
-                    >
-                        <CircleUserRound stroke="blue" size={20} />
-                    </Button>
-                )}
-            </SheetTrigger>
+                    <SheetContent side="bottom" className="rounded-t-2xl">
+                        <SheetHeader className="text-left">
+                            <SheetTitle className="text-2xl">
+                                Login
+                            </SheetTitle>
+                            <SheetDescription className="text-sm font-semibold">
+                                Enter your mobile number to receive a verification code.
+                            </SheetDescription>
+                        </SheetHeader>
 
-            {/* Drawer */}
-            <SheetContent side="bottom" className="rounded-t-2xl">
-                <SheetHeader className="text-left">
-                    <SheetTitle className="text-2xl">Login</SheetTitle>
-                    <SheetDescription className="text-sm font-semibold">
-                        Enter your mobile number to receive a verification code.
-                    </SheetDescription>
-                </SheetHeader>
+                        {FormUI}
+                    </SheetContent>
+                </Sheet>
+            </div>
 
-                <div className="mt-6 space-y-4">
-                    <Input
-                        type="tel"
-                        placeholder="Enter mobile number"
-                        value={mobile}
-                        onChange={(e) => setMobile(e.target.value)}
-                        className="h-14"
-                    />
+            {/* DESKTOP */}
+            <div className="hidden md:block">
+                <Dialog>
+                    <DialogTrigger asChild>
+                        {TriggerUI}
+                    </DialogTrigger>
 
-                    <Button
-                        className="h-12 w-full"
-                        onClick={handleLogin}
-                        disabled={!mobile}
-                    >
-                        Verify & Login
-                    </Button>
-                </div>
-            </SheetContent>
+                    <DialogContent className="max-w-sm">
+                        <DialogHeader>
+                            <DialogTitle className="text-2xl">
+                                Login
+                            </DialogTitle>
+                            <DialogDescription className="text-sm font-semibold">
+                                Enter your mobile number to receive a verification code.
+                            </DialogDescription>
+                        </DialogHeader>
 
-        </Sheet>
-    );
+                        {FormUI}
+                    </DialogContent>
+                </Dialog>
+            </div>
+        </>
+    )
 }

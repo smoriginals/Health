@@ -1,4 +1,4 @@
-import {
+﻿import {
     Drawer,
     DrawerContent,
     DrawerHeader,
@@ -8,7 +8,6 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
 import { MapPin, Search } from "lucide-react";
 import { useState } from "react";
 
@@ -86,10 +85,10 @@ export default function LocationDrawer({ children }) {
                     </div>
 
                     {/* Near Me */}
-                    <div className="px-4 mt-4">
+                    <div className="mt-4 px-4">
                         <Button
                             variant="outline"
-                            className="w-full flex gap-2"
+                            className="flex w-full gap-2"
                             onClick={handleNearMe}
                         >
                             <MapPin size={18} />
@@ -98,8 +97,8 @@ export default function LocationDrawer({ children }) {
                     </div>
 
                     {/* Grid Cities */}
-                    <div className="px-4 mt-6">
-                        <p className="font-semibold mb-3">Popular Cities</p>
+                    <div className="mt-6 px-4">
+                        <p className="mb-3 font-semibold">Popular Cities</p>
 
                         <div className="grid grid-cols-3 gap-3">
                             {topCities.map((city) => (
@@ -115,10 +114,10 @@ export default function LocationDrawer({ children }) {
                     </div>
 
                     {/* Scroll List */}
-                    <div className="px-4 mt-6 pb-6">
-                        <p className="font-semibold mb-3">Other Cities</p>
+                    <div className="mt-6 px-4 pb-6">
+                        <p className="mb-3 font-semibold">Other Cities</p>
 
-                        <div className="max-h-48 overflow-y-auto space-y-2">
+                        <div className="max-h-48 space-y-2 overflow-y-auto">
                             {otherCities.map((city) => (
                                 <Button
                                     key={city}

@@ -3,21 +3,33 @@ import {
     MapPin,
     Search,
     ChevronDown,
-    ArrowRight,
     Star,
 } from "lucide-react";
 import hero from "../assets/hero.webp";
 import moblogo from "../assets/moblogo.webp";
 import CitySearch from "./CitySearch";
+import { ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import SecondOption from "./SecondOption";
+import AskGpt from "./AskGpt";
+
+
 export default function Herobar() {
 
+
     const scrollToReviews = () => {
-       
+
         document.getElementById("reviews")?.scrollIntoView({
             behavior: "smooth",
             block: "start",
         });
     };
+
+    const OpenStore = (e) => {
+        e.preventDefault();
+        window.open("https://play.google.com/store/apps/details?id=com.curely.app", "_blank");
+
+    }
 
     return (
         <>
@@ -41,7 +53,7 @@ export default function Herobar() {
                     />
 
                     {/* Gradient Overlay — stronger on mobile for readability */}
-                    <div className="absolute inset-0 rounded-b-[40px] bg-gradient-to-r from-black/80 via-black/60 to-black/20 sm:rounded-b-[60px] sm:from-black/70 sm:via-black/40 sm:to-transparent md:rounded-b-[100px]" />
+                    <div className="absolute inset-0 rounded-b-[40px] bg-gradient-to-r from-black/80 via-black/60 to-black/20 opacity-60 sm:rounded-b-[60px] sm:from-black/70 sm:via-black/40 sm:to-transparent md:rounded-b-[100px]"/>
 
                     {/* Content — positioned inside the image container so it stays within bounds */}
                     <div className="absolute inset-0 flex items-center">
@@ -72,40 +84,34 @@ export default function Herobar() {
                             {/* Search Row */}
                             <div className="flex w-full max-w-2xl flex-col gap-3 sm:flex-row">
 
-                                {/* Location Dropdown */}
-                                {/*<button className="flex w-full items-center justify-between gap-2 rounded-full bg-black/75 px-5 py-3 text-white backdrop-blur-sm transition hover:bg-black/90 sm:w-auto sm:justify-start">*/}
-                                {/*    <span className="flex items-center gap-2 text-sm font-medium">*/}
-                                {/*        <MapPin size={16} className="text-blue-400" />*/}
-                                {/*        Delhi*/}
-                                {/*    </span>*/}
-                                {/*    <ChevronDown size={15} className="text-gray-400" />*/}
-                                {/*</button>*/}
-
-                                {/* Search Input */}
-                                {/*<div className="flex flex-1 items-center gap-2 rounded-full bg-black/75 px-5 py-3 backdrop-blur-sm transition focus-within:ring-2 focus-within:ring-blue-400">*/}
-                                {/*    <input*/}
-                                {/*        type="text"*/}
-                                {/*        placeholder="Search Doctor, Hospital, Speciality..."*/}
-                                {/*        className="w-full bg-transparent text-sm text-white placeholder-gray-400 outline-none"*/}
-                                {/*    />*/}
-                                {/*    <Search size={17} className="flex-shrink-0 text-gray-400" />*/}
-                                {/*</div>*/}
 
                                 <CitySearch />
 
                             </div>
 
                             {/* CTA Chips */}
-                            <div className="hidden md:flex mt-5 w-full max-w-2xl items-center justify-between overflow-hidden rounded-full bg-blue-100 divide-x divide-blue-200">
-                                {["Get Second Opinion", "Ask HealthGPT", "Get The App"].map((text) => (
-                                    <button
-                                        key={text}
-                                        className="flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-200"
-                                    >
-                                        {text}
+                            <div className="my-2 hidden rounded-full py-2 md:flex">
+
+                                {/* Wrap freely */}
+                                <SecondOption>
+                                    <Button className='h-12 rounded-l-full bg-blue-100 text-blue-500 hover:bg-blue-200 hover:text-blue-700'>
+                                        Get Second Opinion
                                         <ArrowRight size={15} />
-                                    </button>
-                                ))}
+                                    </Button>
+                                </SecondOption>
+
+                                <AskGpt>
+                                    <Button className='h-12 rounded-none bg-blue-100 text-blue-500 hover:bg-blue-200 hover:text-blue-700'>
+                                        Ask HealthGPT
+                                        <ArrowRight size={15} />
+                                    </Button>
+                                </AskGpt>
+
+                                <Button className='h-12 rounded-r-full bg-blue-100 text-blue-500 hover:bg-blue-200 hover:text-blue-700' onClick={OpenStore}>
+                                    Get The App
+                                    <ArrowRight size={15} />
+                                </Button>
+
                             </div>
 
                         </div>

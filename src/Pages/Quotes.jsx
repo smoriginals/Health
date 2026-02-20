@@ -4,7 +4,7 @@ import { Quote } from 'lucide-react';
 export default function Quotes() {
     return (
         <>
-            <div className="z-[-1] relative top-16 h-80 w-full overflow-hidden bg-blue-100 p-6">
+            <div className="relative top-16 h-80 w-full overflow-hidden bg-blue-100 p-6">
                 {/* Top Left Quote (responsive positioning) */}
                 <Quote size={40} stroke='#00507D' fill='#00507D'/>
 

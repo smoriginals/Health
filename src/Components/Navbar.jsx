@@ -9,6 +9,7 @@ import LocationDrawer from "./LocationDrawer";
 import { Button } from "@/components/ui/button";
 import Booking from "../Pages/Booking";
 import CitySearch from "./CitySearch";
+import BookingAppointments from "./BookingAppointments";
 
 export default function Navbar() {
 
@@ -124,7 +125,7 @@ export default function Navbar() {
 
     const WhatsappSupport = (e) => {
         e.preventDefault()
-        
+
         window.open(
             "https://api.whatsapp.com/send/?phone=918860688606&text=Hi%2C+I+want+to+book+an+appointment+with+a+Cardiology+doctor+departmentid%3D33&type=phone_number&app_absent=0",
             "_blank"
@@ -287,21 +288,26 @@ export default function Navbar() {
                         {/* RIGHT — Desktop Actions */}
                         <div className="hidden flex-row items-center justify-center gap-2 px-2 md:flex">
 
-                            <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-blue-400 text-blue-600 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:text-white active:scale-95 transition-all duration-150">
+                            <Sidebar>
+                                <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-blue-400 text-blue-600 transition-all duration-150 hover:bg-blue-500 hover:text-white active:scale-95 active:bg-blue-600 active:text-white">
 
-                                <Search size={16} />
-                            </button>
+                                    <Search size={16} />
+                                </button>
+                            </Sidebar>
 
-                            <button className="flex shrink-0 items-center gap-2 rounded-full bg-blue-100 px-5 py-2 font-medium text-blue-700 hover:bg-blue-200">
-                                <Calendar size={16} />
-                                Book Appointment
-                            </button>
-                           
+                            <BookingAppointments>
+                                <button className="flex shrink-0 items-center gap-2 rounded-full bg-blue-100 px-5 py-2 font-medium text-blue-700 hover:bg-blue-200">
+                                    <Calendar size={16} />
+                                    Book Appointment
+                                </button>
+                            </BookingAppointments>
 
-                            <button className="shrink-1 flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2 font-medium text-white hover:bg-blue-700">
-                                <User size={16} />
-                                Login
-                            </button>
+                            <LoginDrawer>
+                                <button className="shrink-1 flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2 font-medium text-white hover:bg-blue-700">
+                                    <User size={16} />
+                                    Login
+                                </button>
+                            </LoginDrawer>
 
                         </div>
 
@@ -309,11 +315,11 @@ export default function Navbar() {
                         {/* MOBILE HEADER RIGHT */}
                         <div className="flex items-center gap-2 md:hidden">
 
-                            <button className="rounded-full border p-2 text-blue-600 h-9 w-9 flex justify-center items-center" onClick={WhatsappSupport}>
+                            <button className="flex h-9 w-9 items-center justify-center rounded-full border p-2 text-blue-600" onClick={WhatsappSupport}>
                                 <MessageCircleMore size={20} />
                             </button>
 
-                            <Sidebar/>
+                            <Sidebar />
 
                             <LoginDrawer />
 
