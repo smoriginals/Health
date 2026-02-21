@@ -1,6 +1,6 @@
 ﻿import React, { useState } from "react";
 import { MapPin, Building2, UserRound, ChevronRight } from "lucide-react";
-import india from '../assets/india.png';
+import india from '../../assets/india.png';
 
 const locations = [
     {

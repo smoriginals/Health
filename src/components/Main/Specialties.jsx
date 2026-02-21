@@ -1,4 +1,5 @@
-﻿import React, { useState } from "react";
+﻿
+import React, { useState } from "react";
 import {
     Smile,
     Hospital,
@@ -43,11 +44,15 @@ export default function Specialties() {
     ];
 
     return (
+
+
         <div className="relative top-16 w-full bg-gradient-to-b from-white to-gray-50 px-2 py-4">
             <div className="mx-auto max-w-7xl p-2">
 
                 {/* Stats Section */}
                 <div className="mb-20 grid grid-cols-2 gap-8 p-2 md:grid-cols-2 lg:grid-cols-4">
+
+                    
                     {stats.map(({ icon: Icon, number, label }) => (
                         <div key={label} className="flex items-start gap-4">
                             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-teal-50 text-teal-600">

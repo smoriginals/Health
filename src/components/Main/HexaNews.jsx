@@ -1,9 +1,9 @@
 ﻿import React from 'react';
-import cnbc from "../assets/cnbc.svg";
-import economic from "../assets/economic.svg";
-import entrackr from "../assets/entrackr.svg";
-import inc42 from "../assets/inc42.svg";
-import yourstory from "../assets/yourstory.svg";
+import cnbc from "../../assets/cnbc.svg";
+import economic from "../../assets/economic.svg";
+import entrackr from "../../assets/entrackr.svg";
+import inc42 from "../../assets/inc42.svg";
+import yourstory from "../../assets/yourstory.svg";
 
 export default function HexaNews() {
     return (

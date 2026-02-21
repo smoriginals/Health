@@ -1,5 +1,5 @@
 ﻿import { ArrowRight } from "lucide-react"
-import AskGpt from "../Components/AskGpt";
+import AskGpt from "../Main/AskGpt";
 import { useState } from "react"
 
 

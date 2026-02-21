@@ -9,7 +9,7 @@
 } from "@/components/ui/select"
 import React from "react"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Separator } from "@/components/ui/separator"
+
 
 
     const topics = [
@@ -36,7 +36,7 @@ import { Separator } from "@/components/ui/separator"
 
 
     ];
-export function SelectTopic({ value, onChange }) {
+export default function SelectTopic({ value, onChange }) {
 
 
     return (

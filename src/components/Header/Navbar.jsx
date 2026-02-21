@@ -1,15 +1,12 @@
 ﻿import React, { useState, useRef } from "react";
-import { Search, Calendar, User, CircleUserRound, ChevronDown, MessageCircleMore, ChevronRight, MapPin } from "lucide-react";
-
+import { Search, Calendar, User, CircleUserRound, ChevronDown, MessageCircleMore, ChevronRight } from "lucide-react";
 import { Menu, X } from "lucide-react";
-import logoc from "../assets/logoc.svg";
-import Sidebar from "../Components/Sidebar";
-import LoginDrawer from "../Components/LoginDrawer";
-import LocationDrawer from "./LocationDrawer";
-import { Button } from "@/components/ui/button";
-import Booking from "../Pages/Booking";
-import CitySearch from "./CitySearch";
-import BookingAppointments from "./BookingAppointments";
+import logoc from "../../assets/logoc.svg";
+
+import Sidebar from "../Header/Sidebar";
+import LoginDrawer from "../Header/LoginDrawer";
+import CitySearch from "../Main/CitySearch";
+import BookingAppointments from "../Main/BookingAppointments";
 
 export default function Navbar() {
 
@@ -132,6 +129,10 @@ export default function Navbar() {
         );
         console.log("clicked")
     }
+    const GotoHome = (e) => {
+        e.preventDefault();
+        window.location.href = "/";
+    }
 
 
     return (
@@ -144,7 +145,7 @@ export default function Navbar() {
                     <div className="flex shrink-0 items-center gap-1">
 
                         {/* LEFT — Logo */}
-                        <div className="flex items-center px-2 py-1">
+                        <div className="flex items-center px-2 py-1" onClick={GotoHome }>
 
                             <div>
                                 <img src={logoc} alt="HexaHealth" className="h-8 w-full" />

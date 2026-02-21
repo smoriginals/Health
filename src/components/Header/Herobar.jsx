@@ -1,17 +1,14 @@
 ﻿import React from "react";
-import {
-    MapPin,
-    Search,
-    ChevronDown,
-    Star,
-} from "lucide-react";
-import hero from "../assets/hero.webp";
-import moblogo from "../assets/moblogo.webp";
-import CitySearch from "./CitySearch";
-import { ArrowRight } from "lucide-react"
+import { Star, ArrowRight } from "lucide-react";
+
+import hero from "../../assets/hero.webp";
+import moblogo from "../../assets/moblogo.webp";
+
 import { Button } from "@/components/ui/button"
-import SecondOption from "./SecondOption";
-import AskGpt from "./AskGpt";
+
+import CitySearch from "../Main/CitySearch";
+import SecondOption from "../Main/SecondOption";
+import AskGpt from "../Main/AskGpt";
 
 
 export default function Herobar() {
@@ -53,7 +50,7 @@ export default function Herobar() {
                     />
 
                     {/* Gradient Overlay — stronger on mobile for readability */}
-                    <div className="absolute inset-0 rounded-b-[40px] bg-gradient-to-r from-black/80 via-black/60 to-black/20 opacity-60 sm:rounded-b-[60px] sm:from-black/70 sm:via-black/40 sm:to-transparent md:rounded-b-[100px]"/>
+                    <div className="absolute inset-0 rounded-b-[40px] bg-gradient-to-r from-black/80 via-black/60 to-black/20 opacity-60 sm:rounded-b-[60px] sm:from-black/70 sm:via-black/40 sm:to-transparent md:rounded-b-[100px]" />
 
                     {/* Content — positioned inside the image container so it stays within bounds */}
                     <div className="absolute inset-0 flex items-center">

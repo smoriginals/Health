@@ -1,10 +1,11 @@
 ﻿import React from 'react';
 import { Calendar, HandHeart, Bot, UsersRound, CircleUserRound } from 'lucide-react';
-import BookingAppointments from './BookingAppointments';
-import SecondOption from './SecondOption';
-import AskGpt from './AskGpt';
-import Community from './Community';
-import LoginDrawer from './LoginDrawer';
+
+import BookingAppointments from '../Main/BookingAppointments';
+import SecondOption from '../Main/SecondOption';
+import AskGpt from '../Main/AskGpt';
+import Community from '../Main/Community';
+import LoginDrawer from '../Header/LoginDrawer';
 
 
 export default function MobileFooter() {

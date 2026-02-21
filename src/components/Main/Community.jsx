@@ -18,8 +18,8 @@ import {
     MessageCircle,
     Heart,
 } from "lucide-react"
-import { SelectTopic } from "./SelectTopic"
 
+import SelectTopic from '../Main/SelectTopic';
 
 export default function Community({ children }) {
 
