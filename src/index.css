@@ -1,5 +1,5 @@
 ﻿@tailwind base;
-@tailwind HexaComponents;
+@tailwind components;
 @tailwind utilities;
 
 /* ---------- SHADCN VARIABLES ---------- */
