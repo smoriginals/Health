@@ -74,8 +74,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -99,8 +119,7 @@
               "RelativeToolTip": "src\\components\\Main\\GotoCommunity.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:38:57.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:38:57.827Z"
             },
             {
               "$type": "Document",
@@ -112,8 +131,7 @@
               "RelativeToolTip": "src\\components\\Header\\Herobar.jsx",
               "ViewState": "AgIAAF0AAAAAAAAAAAAiwHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:33:04.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:33:04.815Z"
             },
             {
               "$type": "Document",
@@ -125,8 +143,7 @@
               "RelativeToolTip": "src\\components\\Header\\Navbar.jsx",
               "ViewState": "AgIAAGIAAAAAAAAAAAAQwHIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:26:54.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:26:54.487Z"
             },
             {
               "$type": "Document",
@@ -138,8 +155,7 @@
               "RelativeToolTip": "src\\components\\Main\\Community.jsx",
               "ViewState": "AgIAAH0AAAAAAAAAAAAiwJoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:37:57.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:37:57.344Z"
             },
             {
               "$type": "Document",
@@ -151,8 +167,7 @@
               "RelativeToolTip": "src\\components\\Main\\SelectTopic.jsx",
               "ViewState": "AgIAABYAAAAAAAAAAAAUwCYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:41:24.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:41:24.769Z"
             },
             {
               "$type": "Document",
@@ -164,8 +179,7 @@
               "RelativeToolTip": "src\\components\\Main\\SecondOption.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:41:06.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:41:06.753Z"
             },
             {
               "$type": "Document",
@@ -177,8 +191,7 @@
               "RelativeToolTip": "src\\App.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T06:46:58.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T06:46:58.163Z"
             },
             {
               "$type": "Document",
@@ -190,8 +203,7 @@
               "RelativeToolTip": "src\\components\\Main\\BookingAppointments.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:36:08.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:36:08.592Z"
             },
             {
               "$type": "Document",
@@ -203,8 +215,7 @@
               "RelativeToolTip": "src\\components\\Main\\HexaNews.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:43:05.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:43:05.205Z"
             },
             {
               "$type": "Document",
@@ -216,8 +227,7 @@
               "RelativeToolTip": "src\\components\\Main\\Locations.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:42:22.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:42:22.919Z"
             },
             {
               "$type": "Document",
@@ -229,8 +239,7 @@
               "RelativeToolTip": "src\\components\\Main\\Help.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:39:54.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:39:54.8Z"
             },
             {
               "$type": "Document",
@@ -242,8 +251,7 @@
               "RelativeToolTip": "src\\components\\Main\\HealthGPT.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:39:17.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:39:17.433Z"
             },
             {
               "$type": "Document",
@@ -255,8 +263,7 @@
               "RelativeToolTip": "src\\components\\Main\\Chatbot.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:37:10.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:37:10.378Z"
             },
             {
               "$type": "Document",
@@ -268,8 +275,7 @@
               "RelativeToolTip": "src\\components\\Main\\Home.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:06:39.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T11:06:39.657Z"
             },
             {
               "$type": "Document",
@@ -281,28 +287,7 @@
               "RelativeToolTip": "src\\components\\Footer\\MobileFooter.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T11:30:20.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2026-02-21T11:30:20.981Z"
             }
           ]
         }
