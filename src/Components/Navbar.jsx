@@ -7,7 +7,7 @@ import Sidebar from "../components/Sidebar";
 import LoginDrawer from "../components/LoginDrawer";
 import LocationDrawer from "./LocationDrawer";
 import { Button } from "@/components/ui/button";
-import Booking from "../pages/Booking";
+import Booking from "../components/Booking";
 import CitySearch from "./CitySearch";
 import BookingAppointments from "./BookingAppointments";
 
