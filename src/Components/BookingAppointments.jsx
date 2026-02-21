@@ -1,5 +1,5 @@
 ﻿import { useState } from "react"
-import BookingCity from "../Components/BookingCity"
+import BookingCity from "../components/BookingCity"
 
 import {
     Sheet,

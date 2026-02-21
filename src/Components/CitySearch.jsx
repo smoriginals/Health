@@ -1,4 +1,4 @@
-import { useState } from "react"
+﻿import { useState } from "react"
 import { MapPin, ChevronDown, Search } from "lucide-react"
 
 import {
@@ -63,7 +63,7 @@ export default function CitySearch() {
                 <DrawerTrigger asChild>
                     <Button
                         size="sm"
-                        className="w-fit gap-2 bg-black text-white hover:bg-black/80 rounded-full"
+                        className="w-fit gap-2 rounded-full bg-black text-white hover:bg-black/80"
                     >
                         <MapPin size={16} />
                         {city}
@@ -101,7 +101,7 @@ export default function CitySearch() {
                 <Input
                     value={query}
                     placeholder={`Search Doctor, Hospital, etc in ${city}`}
-                    className="h-12 rounded-full pr-12 bg-white border border-gray-300 text-base"
+                    className="h-12 rounded-full border border-gray-300 bg-white pr-12 text-base"
                     onChange={(e) => {
                         setQuery(e.target.value)
                         setArea("")     // reset confirmed selection
@@ -119,7 +119,7 @@ export default function CitySearch() {
 
                 {/* ===== DROPDOWN SUGGESTIONS ===== */}
                 {query && !area && (
-                    <div className="absolute top-14 z-[999] w-full rounded-xl border bg-white shadow-lg">
+                    <div className="z-[999] absolute top-14 w-full rounded-xl border bg-white shadow-lg">
 
                         {filteredAreas.length === 0 && (
                             <div className="p-3 text-sm text-gray-400">

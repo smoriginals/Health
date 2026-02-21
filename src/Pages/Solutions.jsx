@@ -3,7 +3,7 @@ import mobile from "../assets/mobile.webp";
 import consult from "../assets/consult.webp";
 import parents from "../assets/parents.webp";
 import { CircleCheck } from "lucide-react";
-import BookingAppointments from "../Components/BookingAppointments";
+import BookingAppointments from "../components/BookingAppointments";
 
 const sections = [
     {

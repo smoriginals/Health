@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\Components",
-    "\\src\\lib",
-    "\\src\\Pages"
+    "\\src"
   ],
-  "SelectedNode": "\\src\\App.jsx",
+  "SelectedNode": "\\src\\Pages",
   "PreviewInSolutionExplorer": true
 }

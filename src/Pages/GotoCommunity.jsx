@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import community from "../assets/community.webp";
-import Community from '../Components/Community';
+import Community from '../components/Community';
 
 
 export default function GotoCommunity() {
@@ -9,7 +9,7 @@ export default function GotoCommunity() {
             <section className="bg-white px-4 py-20">
                 <div className="mx-auto flex max-w-7xl flex-col items-center text-center md:flex-row md:items-start md:text-left">
                     {/* Left Side: Text */}
-                    <div className="mb-10 w-full md:mb-0 md:w-1/2 md:pr-12  h-80 md:py-12">
+                    <div className="mb-10 h-80 w-full md:mb-0 md:w-1/2 md:py-12 md:pr-12">
                         <h2 className="mb-4 text-2xl font-bold text-blue-900 md:text-3xl">
                             Hexa Community: Ask Health Questions, Get Expert Answers
                         </h2>

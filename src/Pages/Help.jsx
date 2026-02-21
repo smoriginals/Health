@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import { ArrowRight, UserCog, BotMessageSquare } from "lucide-react";
-import AskGpt from "../Components/AskGpt";
+import AskGpt from "../components/AskGpt";
 
 // 👇 Replace these with your actual image imports or URLs
 const AI_REPORT_IMG = "https://cdn-icons-png.flaticon.com/512/4228/4228948.png";
