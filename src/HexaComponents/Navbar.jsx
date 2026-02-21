@@ -3,11 +3,11 @@ import { Search, Calendar, User, CircleUserRound, ChevronDown, MessageCircleMore
 
 import { Menu, X } from "lucide-react";
 import logoc from "../assets/logoc.svg";
-import Sidebar from "../components/Sidebar";
-import LoginDrawer from "../components/LoginDrawer";
+import Sidebar from "../HexaComponents/Sidebar";
+import LoginDrawer from "../HexaComponents/LoginDrawer";
 import LocationDrawer from "./LocationDrawer";
 import { Button } from "@/components/ui/button";
-import Booking from "../components/Booking";
+import Booking from "../HexaComponents/Booking";
 import CitySearch from "./CitySearch";
 import BookingAppointments from "./BookingAppointments";
 

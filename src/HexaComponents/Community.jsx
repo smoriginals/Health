@@ -87,7 +87,7 @@ export default function Community({ children }) {
                 {/* SCROLLABLE FEED AREA */}
                 <div className="flex-1 space-y-4 overflow-y-auto p-4">
 
-                    {/* You can inject more components here later */}
+                    {/* You can inject more HexaComponents here later */}
 
                     {posts.map((post) => (
                         <div

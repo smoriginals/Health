@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import { BotMessageSquare } from 'lucide-react';
-import AskGpt from '../components/AskGpt';
+import AskGpt from '../HexaComponents/AskGpt';
 export default function Chatbot() {
     return (
         <>

@@ -1,5 +1,5 @@
 ﻿import { useState, useRef } from "react"
-import BookingCity from "../components/BookingCity"
+import BookingCity from "../HexaComponents/BookingCity"
 import { ArrowUpFromLine } from "lucide-react"
 
 import {

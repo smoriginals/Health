@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import community from "../assets/community.webp";
-import Community from '../components/Community';
+import Community from '../HexaComponents/Community';
 
 
 export default function GotoCommunity() {
