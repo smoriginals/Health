@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src"
   ],
-  "SelectedNode": "\\Health.sln",
+  "SelectedNode": "\\src\\Components",
   "PreviewInSolutionExplorer": true
 }
