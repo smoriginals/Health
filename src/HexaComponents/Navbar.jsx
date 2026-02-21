@@ -5,11 +5,8 @@ import { Menu, X } from "lucide-react";
 import logoc from "../assets/logoc.svg";
 import Sidebar from "../HexaComponents/Sidebar";
 import LoginDrawer from "../HexaComponents/LoginDrawer";
-import LocationDrawer from "./LocationDrawer";
-import { Button } from "@/components/ui/button";
-import Booking from "../HexaComponents/Booking";
-import CitySearch from "./CitySearch";
-import BookingAppointments from "./BookingAppointments";
+import CitySearch from "../HexaComponents/CitySearch";
+import BookingAppointments from "../HexaComponents/BookingAppointments";
 
 export default function Navbar() {
 

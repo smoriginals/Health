@@ -11,7 +11,7 @@ import CitySearch from "./CitySearch";
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import SecondOption from "./SecondOption";
-import AskGpt from "./AskGpt";
+import AskGpt from '../HexaComponents/AskGpt';
 
 
 export default function Herobar() {

@@ -3,60 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\acera\\Desktop\\Health\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingCity.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\BookingCity.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Booking.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Booking.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\CitySearch.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\MobileFooter.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\MobileFooter.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LoginDrawer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\LoginDrawer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LocationDrawer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\LocationDrawer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Herobar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Herobar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Community.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Community.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\SecondOption.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\CitySearch.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AskGpt.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\AskGpt.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingCity.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\BookingCity.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\BookingAppointments.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Herobar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Herobar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Booking.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Booking.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AskGpt.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\AskGpt.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AreaPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\AreaPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SelectTopic.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\SelectTopic.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\SecondOption.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,24 +78,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "MobileFooter.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\MobileFooter.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\MobileFooter.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\MobileFooter.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\MobileFooter.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T08:06:14.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "BookingCity.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingCity.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\BookingCity.jsx",
               "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingCity.jsx",
               "RelativeToolTip": "src\\HexaComponents\\BookingCity.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-02-21T07:51:12.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "Herobar.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Herobar.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\Herobar.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Herobar.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\Herobar.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:40:09.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookingAppointments.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\BookingAppointments.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\BookingAppointments.jsx",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:46:38.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CitySearch.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\CitySearch.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\CitySearch.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:49:37.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Community.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Community.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\Community.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Community.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\Community.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:45:02.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Home.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\Home.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Home.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\Home.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T06:59:29.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LocationDrawer.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LocationDrawer.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\LocationDrawer.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LocationDrawer.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\LocationDrawer.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:52:36.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Navbar.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Navbar.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\Navbar.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Navbar.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\Navbar.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:22:59.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Booking.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Booking.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\Booking.jsx",
@@ -97,19 +213,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CitySearch.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\CitySearch.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\CitySearch.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:49:37.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "LoginDrawer.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LoginDrawer.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\LoginDrawer.jsx",
@@ -122,85 +225,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Sidebar.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\Sidebar.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\Sidebar.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:48:10.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SecondOption.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\SecondOption.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\SecondOption.jsx",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwBoAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:47:25.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AskGpt.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AskGpt.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\AskGpt.jsx",
               "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AskGpt.jsx",
               "RelativeToolTip": "src\\HexaComponents\\AskGpt.jsx",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-02-21T07:47:06.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BookingAppointments.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\BookingAppointments.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\BookingAppointments.jsx",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:46:38.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Community.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Community.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\Community.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Community.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\Community.jsx",
-              "ViewState": "AgIAADgAAAAAAAAAAAAQwAoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:45:02.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Herobar.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Herobar.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\Herobar.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Herobar.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\Herobar.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:40:09.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "AreaPage.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AreaPage.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\AreaPage.jsx",
@@ -213,15 +251,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Navbar.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Navbar.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\Navbar.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Navbar.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\Navbar.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "SelectTopic.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SelectTopic.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\SelectTopic.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SelectTopic.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\SelectTopic.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:22:59.614Z",
+              "WhenOpened": "2026-02-21T07:54:50.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Sidebar.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\Sidebar.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\Sidebar.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:48:10.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SecondOption.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\SecondOption.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\SecondOption.jsx",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwBoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:47:25.491Z",
               "EditorCaption": ""
             },
             {
@@ -246,20 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Home.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Home.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\Home.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Home.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\Home.jsx",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwBwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T06:59:29.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\App.jsx",
               "RelativeDocumentMoniker": "src\\App.jsx",
