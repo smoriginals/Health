@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\acera\\Desktop\\Health\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SelectTopic.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\SelectTopic.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\SecondOption.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -55,20 +67,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\AreaPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SelectTopic.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\SelectTopic.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HexaComponents\\SecondOption.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +82,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MobileFooter.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\MobileFooter.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\MobileFooter.jsx",
@@ -96,19 +96,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "BookingCity.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingCity.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\BookingCity.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingCity.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\BookingCity.jsx",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:51:12.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Herobar.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Herobar.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\Herobar.jsx",
@@ -122,32 +109,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "BookingAppointments.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\BookingAppointments.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\BookingAppointments.jsx",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:46:38.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CitySearch.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\CitySearch.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\CitySearch.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:49:37.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Community.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Community.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\Community.jsx",
@@ -160,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Home.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Home.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\Home.jsx",
@@ -173,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "LocationDrawer.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LocationDrawer.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\LocationDrawer.jsx",
@@ -186,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Navbar.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Navbar.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\Navbar.jsx",
@@ -199,72 +160,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Booking.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Booking.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\Booking.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Booking.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\Booking.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:50:11.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginDrawer.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LoginDrawer.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\LoginDrawer.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LoginDrawer.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\LoginDrawer.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Title": "SecondOption.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\SecondOption.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\SecondOption.jsx",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:48:40.783Z",
+              "WhenOpened": "2026-02-21T07:47:25.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AskGpt.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AskGpt.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\AskGpt.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AskGpt.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\AskGpt.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:47:06.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AreaPage.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AreaPage.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\AreaPage.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AreaPage.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\AreaPage.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:36:15.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "SelectTopic.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SelectTopic.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\SelectTopic.jsx",
               "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SelectTopic.jsx",
               "RelativeToolTip": "src\\HexaComponents\\SelectTopic.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-02-21T07:54:50.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "Sidebar.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Sidebar.jsx",
               "RelativeDocumentMoniker": "src\\HexaComponents\\Sidebar.jsx",
@@ -277,15 +199,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SecondOption.jsx",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx",
-              "RelativeDocumentMoniker": "src\\HexaComponents\\SecondOption.jsx",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\SecondOption.jsx",
-              "RelativeToolTip": "src\\HexaComponents\\SecondOption.jsx",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwBoAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "CitySearch.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\CitySearch.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\CitySearch.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\CitySearch.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-02-21T07:47:25.491Z",
+              "WhenOpened": "2026-02-21T07:49:37.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookingCity.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingCity.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\BookingCity.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingCity.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\BookingCity.jsx",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:51:12.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingAppointments.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\BookingAppointments.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\BookingAppointments.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\BookingAppointments.jsx",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:46:38.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Booking.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Booking.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\Booking.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\Booking.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\Booking.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:50:11.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDrawer.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LoginDrawer.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\LoginDrawer.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\LoginDrawer.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\LoginDrawer.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:48:40.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AskGpt.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AskGpt.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\AskGpt.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AskGpt.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\AskGpt.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:47:06.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AreaPage.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AreaPage.jsx",
+              "RelativeDocumentMoniker": "src\\HexaComponents\\AreaPage.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\Health\\src\\HexaComponents\\AreaPage.jsx",
+              "RelativeToolTip": "src\\HexaComponents\\AreaPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-02-21T07:36:15.023Z",
               "EditorCaption": ""
             },
             {
@@ -310,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\Health\\src\\App.jsx",
               "RelativeDocumentMoniker": "src\\App.jsx",
