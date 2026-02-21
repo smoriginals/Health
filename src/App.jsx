@@ -17,12 +17,11 @@ import LatestVideos from './Pages/LatestVideos';
 import Booking from './Pages/Booking';
 import Locations from './Pages/Locations';
 import Faq from './Pages/Faq';
-import Footer from './Pages/footer';
 import MobileFooter from './Components/MobileFooter';
 import Chatbot from './Pages/Chatbot';
 import AreaPage from './Pages/AreaPage';
+import Footer from './Pages/Footer';
 import { Routes, Route } from 'react-router-dom';
-
 export default function App() {
     return (
         <Routes>
