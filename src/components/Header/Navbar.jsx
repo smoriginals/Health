@@ -2,6 +2,7 @@
 import { Search, Calendar, User, CircleUserRound, ChevronDown, MessageCircleMore, ChevronRight } from "lucide-react";
 import { Menu, X } from "lucide-react";
 import logoc from "../../assets/logoc.svg";
+import { Link } from "react-router-dom";
 
 import Sidebar from "../Header/Sidebar";
 import LoginDrawer from "../Header/LoginDrawer";
@@ -25,37 +26,36 @@ export default function Navbar() {
     };
 
     const departments = [
-        "Cardiology", "ENT", "Neurosurgery", "Urology", "Gynaecology",
-        "Orthopaedic", "Ophthalmology", "Plastic Surgery",
-        "Gastroenterology", "Nephrology",
-        "Surgical Oncology", "General Surgery"
+        { name: "Cardiology", slug: "/cardiology" },
+        { name: "ENT", slug: "/ent" },
+        { name: "Neurosurgery", slug: "/neurosurgery" },
+        { name: "Urology", slug: "/urology" },
+        { name: "Gynaecology", slug: "/gynaecology" },
+        { name: "Orthopaedic", slug: "/orthopaedic" },
+        { name: "Ophthalmology", slug: "/ophthalmology" },
+        { name: "Plastic Surgery", slug: "/plastic-surgery" },
+        { name: "Gastroenterology", slug: "/gastroenterology" },
+        { name: "Nephrology", slug: "/nephrology" },
+        { name: "Surgical Oncology", slug: "/surgical-oncology" },
+        { name: "General Surgery", slug: "/general-surgery" }
     ];
 
 
 
     const conditionMenu = {
         Proctology: [
-            "Piles",
-            "Anal Fissure",
-            "Anal Fistula",
-            "Perianal Abscess"
+            { name: "Piles", slug: "/condition/piles" },
+            { name: "Anal Fissure", slug: "/condition/anal-fissure" },
+            { name: "Anal Fistula", slug: "/condition/anal-fistula" },
+            { name: "Perianal Abscess", slug: "/condition/perianal-abscess" }
         ],
         Cardiology: [
-            "Heart Blockage",
-            "Arrhythmia",
-            "Chest Pain"
-        ],
-        Orthopedics: [
-            "Knee Pain",
-            "ACL Tear",
-            "Fracture"
-        ],
-        Urology: [
-            "Kidney Stone",
-            "UTI",
-            "Prostate Issue"
+            { name: "Heart Blockage", slug: "/condition/heart-blockage" },
+            { name: "Arrhythmia", slug: "/condition/arrhythmia" },
+            { name: "Chest Pain", slug: "/condition/chest-pain" }
         ]
     };
+
 
     const [condOpen, setCondOpen] = useState(false);
     const [activeCond, setActiveCond] = useState(null);
@@ -76,24 +76,24 @@ export default function Navbar() {
 
     const treatmentMenu = {
         Proctology: [
-            "Laser Piles Surgery",
-            "Fissure Surgery",
-            "Fistula Treatment"
+            { name: "Laser Piles Surgery", slug: "/treatment/laser-piles-surgery" },
+            { name: "Fissure Surgery", slug: "/treatment/fissure-surgery" },
+            { name: "Fistula Treatment", slug: "/treatment/fistula-treatment" }
         ],
         Cardiology: [
-            "Angioplasty",
-            "Bypass Surgery",
-            "Pacemaker Implant"
+            { name: "Angioplasty", slug: "/treatment/angioplasty" },
+            { name: "Bypass Surgery", slug: "/treatment/bypass-surgery" },
+            { name: "Pacemaker Implant", slug: "/treatment/pacemaker-implant" }
         ],
         Orthopedics: [
-            "Knee Replacement",
-            "Hip Replacement",
-            "ACL Reconstruction"
+            { name: "Knee Replacement", slug: "/treatment/knee-replacement" },
+            { name: "Hip Replacement", slug: "/treatment/hip-replacement" },
+            { name: "ACL Reconstruction", slug: "/treatment/acl-reconstruction" }
         ],
         Urology: [
-            "Kidney Stone Removal",
-            "Prostate Surgery",
-            "Ureteroscopy"
+            { name: "Kidney Stone Removal", slug: "/treatment/kidney-stone-removal" },
+            { name: "Prostate Surgery", slug: "/treatment/prostate-surgery" },
+            { name: "Ureteroscopy", slug: "/treatment/ureteroscopy" }
         ]
     };
 
@@ -138,6 +138,7 @@ export default function Navbar() {
     return (
         <>
 
+            {/* DESKTOP */  }
             <nav className="fixed z-40 flex h-16 w-full items-center justify-between border-b bg-white px-1 md:px-6">
 
                 <div className="flex w-full items-center justify-between">
@@ -162,6 +163,7 @@ export default function Navbar() {
                                 onMouseEnter={openMenu}
                                 onMouseLeave={closeMenu}
                             >
+                                {/* Departments Dropdown */}
                                 <button className="flex items-center hover:text-blue-600">
                                     Departments <ChevronDown size={16} />
                                 </button>
@@ -169,12 +171,14 @@ export default function Navbar() {
                                 {open && (
                                     <ul className="absolute left-0 top-full mt-5 flex max-h-[500px] w-56 flex-col overflow-y-auto rounded-lg border bg-white shadow-xl">
 
-                                        {departments.map(d => (
-                                            <li
-                                                key={d}
-                                                className="flex cursor-pointer px-4 py-3 text-gray-600 hover:bg-blue-50"
-                                            >
-                                                {d}
+                                        {departments.map((dept) => (
+                                            <li key={dept.slug}>
+                                                <Link
+                                                    to={dept.slug}
+                                                    className="flex px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600"
+                                                >
+                                                    {dept.name}
+                                                </Link>
                                             </li>
                                         ))}
 
@@ -188,6 +192,8 @@ export default function Navbar() {
                                 onMouseEnter={openCond}
                                 onMouseLeave={closeCond}
                             >
+                                {/* Conditions Dropdown */}
+
                                 <button className="flex items-center hover:text-blue-600">
                                     Conditions <ChevronDown size={16} />
                                 </button>
@@ -212,11 +218,13 @@ export default function Navbar() {
                                                     <ul className="absolute left-full top-0 w-60 rounded-lg border bg-white shadow-lg">
 
                                                         {items.map((item) => (
-                                                            <li
-                                                                key={item}
-                                                                className="cursor-pointer px-4 py-3 text-sm hover:bg-blue-50"
-                                                            >
-                                                                {item}
+                                                            <li key={item.slug}>
+                                                                <Link
+                                                                    to={item.slug}
+                                                                    className="block px-4 py-3 text-sm hover:bg-blue-50"
+                                                                >
+                                                                    {item.name}
+                                                                </Link>
                                                             </li>
                                                         ))}
 
@@ -235,6 +243,7 @@ export default function Navbar() {
                                 onMouseEnter={openTreat}
                                 onMouseLeave={closeTreat}
                             >
+                                {/* Treatments Dropdown */}
                                 <button className="flex items-center gap-1 hover:text-blue-600">
                                     Treatments <ChevronDown size={16} />
                                 </button>
@@ -257,16 +266,16 @@ export default function Navbar() {
                                                 {/* Level 2 */}
                                                 {activeTreat === category && (
                                                     <ul className="absolute left-full top-0 w-60 rounded-lg border bg-white shadow-lg">
-
                                                         {items.map((item) => (
-                                                            <li
-                                                                key={item}
-                                                                className="cursor-pointer px-4 py-3 text-sm hover:bg-blue-50"
-                                                            >
-                                                                {item}
+                                                            <li key={item.slug}>
+                                                                <Link
+                                                                    to={item.slug}
+                                                                    className="block px-4 py-3 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600"
+                                                                >
+                                                                    {item.name}
+                                                                </Link>
                                                             </li>
                                                         ))}
-
                                                     </ul>
                                                 )}
 
@@ -369,11 +378,18 @@ export default function Navbar() {
                             </summary>
 
                             <div className="mt-2 space-y-1 pl-3">
-                                {departments.map(d => (
-                                    <div key={d} className="py-1 text-gray-600 hover:text-blue-600">
-                                        {d}
-                                    </div>
+
+                                {departments.map((dept) => (
+                                    <Link
+                                        key={dept.slug}
+                                        to={dept.slug}
+                                        onClick={() => setMobileOpen(false)}
+                                        className="block py-1 text-gray-600 hover:text-blue-600"
+                                    >
+                                        {dept.name}
+                                    </Link>
                                 ))}
+
                             </div>
                         </details>
 
@@ -400,9 +416,14 @@ export default function Navbar() {
 
                                         <div className="ml-4 mt-1 space-y-1 border-l pl-3">
                                             {items.map(item => (
-                                                <div key={item} className="py-1 text-gray-500 hover:text-blue-600">
-                                                    {item}
-                                                </div>
+                                                <Link
+                                                    key={item.slug}
+                                                    to={item.slug}
+                                                    onClick={() => setMobileOpen(false)}
+                                                    className="block py-1 text-gray-500 hover:text-blue-600"
+                                                >
+                                                    {item.name}
+                                                </Link>
                                             ))}
                                         </div>
 
@@ -435,9 +456,14 @@ export default function Navbar() {
 
                                         <div className="ml-4 mt-1 space-y-1 border-l pl-3">
                                             {items.map(item => (
-                                                <div key={item} className="py-1 text-gray-500 hover:text-blue-600">
-                                                    {item}
-                                                </div>
+                                                <Link
+                                                    key={item.slug}
+                                                    to={item.slug}
+                                                    onClick={() => setMobileOpen(false)}
+                                                    className="block py-1 text-gray-500 hover:text-blue-600"
+                                                >
+                                                    {item.name}
+                                                </Link>
                                             ))}
                                         </div>
 
@@ -448,9 +474,9 @@ export default function Navbar() {
                         </details>
 
 
-                        <a href="/" className="font-semibold text-blue-600">
+                        <Link to="/investors" className="font-semibold text-blue-600">
                             For Investors
-                        </a>
+                        </Link>
 
                     </div>
 

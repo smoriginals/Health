@@ -73,7 +73,7 @@ export default function Footer() {
     const [expandedSection, setExpandedSection] = useState(null);
 
     return (
-        <footer className="relative top-16 w-full border-t border-blue-100 bg-gradient-to-b from-blue-50 to-cyan-50">
+        <footer className="relative top-16 w-full border-t border-blue-100 bg-gradient-to-b from-blue-50 to-cyan-50 pb-12">
 
             {/* Top Tabs */}
             <div className="border-b border-blue-200 bg-white/80">

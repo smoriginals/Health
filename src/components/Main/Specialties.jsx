@@ -46,7 +46,7 @@ export default function Specialties() {
     return (
 
 
-        <div className="relative top-16 w-full bg-gradient-to-b from-white to-gray-50 px-2 py-4">
+        <div className="relative top-16 w-full bg-gradient-to-b from-white to-gray-50 px-2 py-10">
             <div className="mx-auto max-w-7xl p-2">
 
                 {/* Stats Section */}

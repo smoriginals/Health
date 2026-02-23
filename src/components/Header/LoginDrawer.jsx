@@ -20,14 +20,22 @@ import {
 } from "@/components/ui/dialog"
 
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-
+import {
+    InputOTP,
+    InputOTPGroup,
+    InputOTPSeparator,
+    InputOTPSlot,
+} from "@/components/ui/input-otp"
 
 export default function LoginDrawer({ children }) {
     const [mobile, setMobile] = useState("")
 
+    // Strict Indian mobile validation
+    const isValidMobile = /^[6-9]\d{9}$/.test(mobile)
+
     const handleLogin = () => {
-        console.log("Mobile:", mobile)
+        if (!isValidMobile) return
+        console.log("Valid Mobile:", mobile)
     }
 
     // Shared Trigger
@@ -44,24 +52,51 @@ export default function LoginDrawer({ children }) {
 
     // Shared Form
     const FormUI = (
-        <div className="mt-6 space-y-4">
+        <div className="mt-6 space-y-4 w-full flex flex-col justify-center items-center">
 
-            <Input
-                type="tel"
-                placeholder="Enter mobile number"
+            <InputOTP
+                maxLength={10}
                 value={mobile}
-                onChange={(e) => setMobile(e.target.value)}
-                className="h-14"
-            />
+                inputMode="numeric"
+                pattern="[0-9]*"
+                onChange={(value) => {
+                    // Remove non-digits
+                    let numbersOnly = value.replace(/\D/g, "")
+
+                    // Enforce first digit between 6-9
+                    if (numbersOnly.length === 1 && !/[6-9]/.test(numbersOnly)) {
+                        numbersOnly = ""
+                    }
+
+                    setMobile(numbersOnly)
+                }}
+            >
+                <InputOTPGroup>
+                    <InputOTPSlot index={0} className='border-gray-600' />
+                    <InputOTPSlot index={1} className='border-gray-600' />
+                    <InputOTPSlot index={2} className='border-gray-600' />
+                    <InputOTPSlot index={3} className='border-gray-600' />
+                    <InputOTPSlot index={4} className='border-gray-600' />
+                </InputOTPGroup>
+
+                <InputOTPSeparator />
+
+                <InputOTPGroup>
+                    <InputOTPSlot index={5} className='border-gray-600' />
+                    <InputOTPSlot index={6} className='border-gray-600' />
+                    <InputOTPSlot index={7} className='border-gray-600' />
+                    <InputOTPSlot index={8} className='border-gray-600' />
+                    <InputOTPSlot index={9} className='border-gray-600' />
+                </InputOTPGroup>
+            </InputOTP>
 
             <Button
-                className="h-12 w-full"
+                className="h-12 w-full disabled:opacity-50 disabled:cursor-not-allowed"
                 onClick={handleLogin}
-                disabled={!mobile}
+                disabled={!isValidMobile}
             >
                 Verify & Login
             </Button>
-
         </div>
     )
 
@@ -96,7 +131,7 @@ export default function LoginDrawer({ children }) {
                         {TriggerUI}
                     </DialogTrigger>
 
-                    <DialogContent className="max-w-sm">
+                    <DialogContent className="w-full max-w-lg p-8">
                         <DialogHeader>
                             <DialogTitle className="text-2xl">
                                 Login

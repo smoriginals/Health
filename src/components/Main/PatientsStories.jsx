@@ -49,7 +49,7 @@ export default function PatientsStories() {
     const [expanded, setExpanded] = useState(null);
 
     return (
-        <div className="relative top-0 px-4 py-6">
+        <div className="relative top-16 px-4 py-6">
             <div className="mx-auto max-w-7xl">
 
                 {/* Header */}

@@ -28,7 +28,7 @@ export default function Faq() {
     const [open, setOpen] = useState(null);
 
     return (
-        <div className="relative top-0 bg-slate-100 px-4 py-8">
+        <div className="relative top-10 bg-slate-100 px-4 py-8">
             <div className="mx-auto max-w-3xl">
 
                 {/* Header */}

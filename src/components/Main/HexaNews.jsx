@@ -8,7 +8,7 @@ import yourstory from "../../assets/yourstory.svg";
 export default function HexaNews() {
     return (
         <>
-            <div className='flex h-52 w-full flex-col flex-nowrap justify-center p-6 text-center text-gray-600'>
+            <div className='relative top-10 flex h-52 w-full flex-col flex-nowrap justify-center p-6 text-center text-gray-600'>
                 <h1 className='text-2xl font-bold'>Hexa In The News</h1>
 
                 <div className='mt-8 flex items-center justify-evenly gap-10 overflow-x-auto'>

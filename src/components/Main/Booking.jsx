@@ -69,12 +69,12 @@ export default function Booking() {
     ]
 
     return (
-        <section className="relative w-full overflow-hidden px-4 py-8 md:py-20">
+        <section className="relative top-16 w-full overflow-hidden px-4 py-8 md:py-20">
             <div className="mx-auto max-w-7xl">
                 <div className="grid items-start gap-12 lg:grid-cols-2">
 
                     {/* LEFT */}
-                    <div className="space-y-8">
+                    <div className="space-y-6">
                         <div>
                             <h2 className="mb-4 text-3xl font-bold text-teal-900 md:text-4xl lg:text-5xl">
                                 Find the right doctor and hospital

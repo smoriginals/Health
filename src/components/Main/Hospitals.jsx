@@ -1,5 +1,6 @@
 ﻿import React, { useState } from "react";
 import { Star, Calendar, MapPin } from "lucide-react";
+import BookingAppointments from "../Main/BookingAppointments";
 
 export default function Hospitals() {
     const cities = [
@@ -75,8 +76,8 @@ export default function Hospitals() {
                             key={city}
                             onClick={() => setActiveCity(city)}
                             className={`flex-shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-all ${activeCity === city
-                                    ? "border-blue-500 bg-blue-600 text-white"
-                                    : "border-gray-300 bg-white text-gray-600 hover:border-blue-300 hover:bg-blue-50"
+                                ? "border-blue-500 bg-blue-600 text-white"
+                                : "border-gray-300 bg-white text-gray-600 hover:border-blue-300 hover:bg-blue-50"
                                 }`}
                         >
                             {city}
@@ -128,10 +129,12 @@ export default function Hospitals() {
                             </div>
 
                             {/* CTA */}
-                            <button className="mt-auto flex w-full items-center justify-center gap-2 rounded-full border border-blue-500 py-2.5 text-sm font-semibold text-blue-700 transition hover:bg-blue-600 hover:text-white">
-                                <Calendar size={15} />
-                                Book Appointment
-                            </button>
+                            <BookingAppointments>
+                                <button className="mt-auto flex w-full items-center justify-center gap-2 rounded-full border border-blue-500 py-2.5 text-sm font-semibold text-blue-700 transition hover:bg-blue-600 hover:text-white">
+                                    <Calendar size={15} />
+                                    Book Appointment
+                                </button>
+                            </BookingAppointments>
                         </div>
                     ))}
 

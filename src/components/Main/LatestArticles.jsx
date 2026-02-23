@@ -69,7 +69,7 @@ const articles = [
 
 export default function LatestArticles() {
     return (
-        <div className="relative top-0 px-4 py-4">
+        <div className="relative top-16 px-4 py-4">
             <div className="mx-auto max-w-7xl">
 
                 {/* Header */}
