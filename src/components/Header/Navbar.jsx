@@ -164,9 +164,9 @@ export default function Navbar() {
                                 onMouseLeave={closeMenu}
                             >
                                 {/* Departments Dropdown */}
-                                <button className="flex items-center hover:text-blue-600">
+                                <Link to="/departments" className="flex items-center hover:text-blue-600">
                                     Departments <ChevronDown size={16} />
-                                </button>
+                                </Link>
 
                                 {open && (
                                     <ul className="absolute left-0 top-full mt-5 flex max-h-[500px] w-56 flex-col overflow-y-auto rounded-lg border bg-white shadow-xl">
@@ -194,9 +194,9 @@ export default function Navbar() {
                             >
                                 {/* Conditions Dropdown */}
 
-                                <button className="flex items-center hover:text-blue-600">
+                                <Link to="/conditions" className="flex items-center hover:text-blue-600">
                                     Conditions <ChevronDown size={16} />
-                                </button>
+                                </Link>
 
                                 {condOpen && (
                                     <ul className="absolute left-0 top-full mt-4 w-60 rounded-lg border bg-white shadow-lg">
@@ -244,9 +244,9 @@ export default function Navbar() {
                                 onMouseLeave={closeTreat}
                             >
                                 {/* Treatments Dropdown */}
-                                <button className="flex items-center gap-1 hover:text-blue-600">
+                                <Link to="/treatments" className="flex items-center gap-1 hover:text-blue-600">
                                     Treatments <ChevronDown size={16} />
-                                </button>
+                                </Link>
 
                                 {treatOpen && (
                                     <ul className="absolute left-0 top-full mt-4 w-60 rounded-lg border bg-white shadow-lg">
@@ -287,7 +287,7 @@ export default function Navbar() {
                             </li>
 
                             <li>
-                                <a href='/' target='blank' className='decoration-none text-md font-semibold text-gray-600 hover:text-blue-600'>For Investors</a>
+                                <Link to="/investors" className="decoration-none text-md font-semibold text-gray-600 hover:text-blue-600">For Investors</Link>
                             </li>
 
                         </ul>
