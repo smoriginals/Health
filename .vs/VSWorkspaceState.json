@@ -3,8 +3,9 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\assets"
+    "\\src\\admin",
+    "\\src\\components"
   ],
-  "SelectedNode": "\\public",
+  "SelectedNode": "\\src\\admin\\Admin.jsx",
   "PreviewInSolutionExplorer": true
 }
